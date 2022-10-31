@@ -1,4 +1,5 @@
 
+
 img{
   height:150px;
   width:100%;
@@ -188,6 +189,7 @@ body {
     font-size: 15px;
 }
 
+
 .navbar .dropdown-menu a:hover,
 .navbar .dropdown-menu a:focus {
     color: #333 !important;
@@ -320,3 +322,5 @@ body {
     padding: 12px;
 
     }
+ 
+
