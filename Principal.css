@@ -276,9 +276,7 @@ body {
 }
 
 
-.container{
-    height: 100vh;
-}
+
 .dropdown-toggle{
     width: 200px;
     display: flex;
@@ -322,4 +320,3 @@ body {
     padding: 12px;
     }
 
-   
