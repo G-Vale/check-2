@@ -400,13 +400,11 @@ i:hover {
 .top{
   background: url(/Imagens/LOGO/6968d434-ad81-44eb-97bf-291428958634.jpg) no-repeat bottom center scroll;
   background-attachment: fixed;
-  background-color: #cb8e58;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  
-  
+  background-position: center;
 }
 
 .wide {
