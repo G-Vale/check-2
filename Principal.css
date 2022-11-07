@@ -406,14 +406,13 @@ i:hover {
   background-size: cover;
   -o-background-size: cover;
   
+  
 }
-
 
 .wide {
   display: table;
   width: 100%;
   height: 845px;
-  padding: 100px 0;
   text-align: center;
   color: #fff;
   
