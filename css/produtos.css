@@ -27,6 +27,10 @@ body{
     border-color: var(--pink);
 }
 
+.button-nav {
+    border: #000 solid 2px;
+}
+
 /* text color */
 .text-primary{
     color: var(--pink)!important;
@@ -53,7 +57,7 @@ body{
 
 /* header */
 #header{
-    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+    background: url(/Imagens/ANUNCIOS/[ANUNCIO]\ [BLACK\ FRIDAY]\ [002].jpg) top/cover no-repeat;
 }
 .carousel-inner h1{
     font-size: 60px;

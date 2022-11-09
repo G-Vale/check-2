@@ -14,59 +14,79 @@
 </head>
 <body>
     
-    <!-- navbar -->
-    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
-        <div class = "container">
-            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
-                <img src = "/imagens/ANUNCIO/[LOGO][SANDRINHO].png" alt = "site icon">
-                <span class = "text-uppercase fw-lighter ms-2">GDS DryWall</span>
-            </a>
-
-            <div class = "order-lg-2 nav-btns">
-                <button type = "button" class = "btn position-relative">
-                    <i class = "fa fa-shopping-cart"></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
-                </button>
-                <button type = "button" class = "btn position-relative">
-                    <i class = "fa fa-heart"></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
-                </button>
-                <button type = "button" class = "btn position-relative">
-                    <i class = "fa fa-search"></i>
-                </button>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h3>GDS DRYWALL</h3></a>
+          <button class="navbar-toggler button-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GDS DRYWALL</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
-            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
-                <span class = "navbar-toggler-icon"></span>
-            </button>
-
-            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
-                <ul class = "navbar-nav mx-auto text-center">
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "#collection">DryWall</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "#special">Promoção</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "#blogs">DryWall</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "#about">Ferramentas</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2 border-0">
-                        <a class = "nav-link text-uppercase text-dark" href = "#popular">Carrinho</a>
-                    </li>
-                </ul>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Website</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ferramentas</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Ferramentas Eletricas</a></li>
+                    <li><a class="dropdown-item" href="#">Ferramentas à Bateria</a></li>
+                    <li><a class="dropdown-item" href="#">Ferramentas Manuais</a></li>           
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DryWall</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Guia</a></li>
+                    <li><a class="dropdown-item" href="#">Perfil para Drywall</a></li>
+                    <li><a class="dropdown-item" href="#">Massa DryWall</a></li>
+                    <li><a class="dropdown-item" href="#">Parafusos</a></li>
+                    <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                    <li><a class="dropdown-item" href="#">Lã termoacustica</a></li>           
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Steel Frame</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Guia</a></li>
+                      <li><a class="dropdown-item" href="#">Perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                      <li><a class="dropdown-item" href="#">Parafusos</a></li>
+                      <li><a class="dropdown-item" href="#">Chapas Steel Frames</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gesso</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Placas 3D</a></li>
+                      <li><a class="dropdown-item" href="#">Cola Gesso</a></li>
+                      <li><a class="dropdown-item" href="#">Sanca</a></li>
+                      <li><a class="dropdown-item" href="#">Plaquetas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Isolamento Acústico</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Lã de Vidro</a></li>
+                      <li><a class="dropdown-item" href="#">Lã de Rocha</a></li>
+                      <li><a class="dropdown-item" href="#">Lã de Pet</a></li>
+                      
+                    </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search..</button>
+              </form>
             </div>
+          </div>
         </div>
-    </nav>
-    <!-- end of navbar -->
-
-    <!-- header -->
+      </nav>
+<br>
     <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
         <div class = "container h-100 d-flex align-items-center carousel-inner">
             <div class = "text-center carousel-item active">
@@ -97,7 +117,7 @@
                 <h2 class = "position-relative d-inline-block">Produtos</h2>
             </div>
 
-            <div class = "row g-0">
+            <div class = "row g-0 ">
                 <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
                     <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">Tudo</button>
                     <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">DryWall</button>
@@ -126,7 +146,7 @@
 
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                         <div class = "collection-img position-relative">
-                            <img src = "/imagens/STEELFRAME/[Cantoneira Perfurada 300cm].jpg" class = "w-100">
+                            <img src = "/imagens/MONTANTES/Cantoneira Perfurada 300cm.jpg" class = "w-100">
                             <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
                         <div class = "text-center">
@@ -180,7 +200,7 @@
 
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                         <div class = "collection-img position-relative">
-                            <img src = "/imagens/STEELFRAME/[Emenda Para Perfil F-530].jpg" class = "w-100">
+                            <img src = "/imagens/MONTANTES/Emenda Para Perfil F-530.jpg" class = "w-100">
                             <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
                         <div class = "text-center">
@@ -234,7 +254,7 @@
 
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                         <div class = "collection-img position-relative">
-                            <img src = "/imagens/STEELFRAME/MONTANTE 48mm.jpg" class = "w-100">
+                            <img src = "/imagens/MONTANTES/Trilho Pantográfico Reto 3M Kala.jpg" class = "w-100">
                             <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
                         <div class = "text-center">
@@ -245,7 +265,7 @@
                                 <span class = "text-primary"><i class = "fas fa-star"></i></span>
                                 <span class = "text-primary"><i class = "fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Montante 48mm.</p>
+                            <p class = "text-capitalize my-1">Trilho Pantográfico</p>
                             <span class = "fw-bold">$ 45.50</span>
                         </div>
                     </div>
@@ -265,7 +285,7 @@
             <div class = "special-list row g-0">
                 <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class = "special-img position-relative overflow-hidden">
-                        <img src = "/imagens/FERRAMENTAS/[TRENA 8M].jpg" class = "w-100">
+                        <img src = "/imagens/FERRAMENTAS/[FERRAMENTAS] [MARTELO].jpg" class = "w-100">
                         <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                             <i class = "fas fa-heart"></i>
                         </span>
@@ -425,21 +445,21 @@
                 <div class = "col-md-6 col-lg-4 row g-3">
                     <h3 class = "fs-5">Mais Vendidos</h3>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
@@ -450,21 +470,21 @@
                 <div class = "col-md-6 col-lg-4 row g-3">
                     <h3 class = "fs-5">Maior Desconto</h3>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
@@ -475,21 +495,21 @@
                 <div class = "col-md-6 col-lg-4 row g-3">
                     <h3 class = "fs-5">On Sale</h3>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
                     <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid pe-3 w-25">
+                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
                         <div>
                             <p class = "mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
