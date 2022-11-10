@@ -1,0 +1,125 @@
+nav ul {
+    flex: 1;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+.rounded {
+    padding-top: 100px;
+}
+
+.navbar {
+    opacity: 0.8;
+    border-bottom: 1px solid #fff;
+}
+
+.img {
+    height: 840px;
+    background: url("https://images7.alphacoders.com/590/590329.jpg");
+    background-size: cover;
+    z-index: 143;
+    margin-top: -180px;
+}
+
+.nav li {
+    display: inline;
+}
+.nav {
+    margin-top: -660px;
+    height: 90px;
+    width: 100%;
+    background-color: #3c3c3c;
+    position: fixed;
+    z-index: 2;
+}
+.nav a {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 24px 10px 50px 23px;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.menu li {
+    display: inline;
+}
+.menu {
+    height: 90px;
+    width: 100%;
+}
+.menu a {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 24px 10px;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.space {
+    height: 400%;
+    color: #fff;
+}
+
+.block1 {
+    margin: 0 auto;
+    width: 774px; 
+}
+
+h2 {
+    padding-top: 80px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+}
+
+h4 {
+    padding-top: 10px;
+    color: #777;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+}
+
+p {
+    padding-top: 20px;
+    color: #777;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    z-index: 1;
+}
+
+.box {
+    padding-left: 30px;
+    color: #777;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    border-left: 7px solid #f97352;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.pict1 {
+    height: 500px;
+    width: 800px;
+    background: url("http://orig02.deviantart.net/d112/f/2013/005/3/8/bunny_in_a_basket_by_aoao2-d5qi8l2.jpg");
+}
+
+
+.pict2 {
+    height: 500px;
+    width: 800px;
+    background: url("http://cdn.earthporm.com/wp-content/uploads/2015/03/My-bunnies-are-my-models2__880.jpg");
+    background-repeat: repeat-x; 
+}
