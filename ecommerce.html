@@ -1,381 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ecommerce</title>
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap css/bootstrap-5.0.2-dist/css/bootstrap.min.css -->
-    <link rel = "stylesheet" href = "/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
     <!-- custom css css/main.css-->
-    <link rel = "stylesheet" href = "/css/produtos.css">
+    <link rel="stylesheet" href="/css/produtos.css">
 </head>
+
 <body>
-    
+
     <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h3>GDS DRYWALL</h3></a>
-          <button class="navbar-toggler button-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon "></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GDS DRYWALL</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <a class="navbar-brand" href="#">
+                <h3>GDS DRYWALL</h3>
+            </a>
+            <button class="navbar-toggler button-nav" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GDS DRYWALL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Website</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Ferramentas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ferramentas Eletricas</a></li>
+                                <li><a class="dropdown-item" href="#">Ferramentas à Bateria</a></li>
+                                <li><a class="dropdown-item" href="#">Ferramentas Manuais</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">DryWall</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Placas de gesso</a></li>
+                                <li><a class="dropdown-item" href="#">Perfil para Drywall</a></li>
+                                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                <li><a class="dropdown-item" href="#">Tratamento de juntas</a></li>
+                                <li><a class="dropdown-item" href="#">Lã termoacustica</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Steel Frame</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Guia</a></li>
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                <li><a class="dropdown-item" href="#">Placas OSB</a></li>
+                                <li><a class="dropdown-item" href="#">Membrana</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Gesso</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Placas 3D</a></li>
+                                <li><a class="dropdown-item" href="#">Cola Gesso</a></li>
+                                <li><a class="dropdown-item" href="#">Sanca</a></li>
+                                <li><a class="dropdown-item" href="#">Plaquetas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Isolamento Acústico</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Lã de Vidro</a></li>
+                                <li><a class="dropdown-item" href="#">Lã de Rocha</a></li>
+                                <li><a class="dropdown-item" href="#">Lã de Pet</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Website</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ferramentas</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ferramentas Eletricas</a></li>
-                    <li><a class="dropdown-item" href="#">Ferramentas à Bateria</a></li>
-                    <li><a class="dropdown-item" href="#">Ferramentas Manuais</a></li>           
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DryWall</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Placas de gesso</a></li>
-                    <li><a class="dropdown-item" href="#">Perfil para Drywall</a></li>
-                    <li><a class="dropdown-item" href="#">Acessórios</a></li>
-                    <li><a class="dropdown-item" href="#">Tratamento de juntas</a></li>
-                    <li><a class="dropdown-item" href="#">Lã termoacustica</a></li>           
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Steel Frame</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Guia</a></li>
-                      <li><a class="dropdown-item" href="#">Perfil</a></li>
-                      <li><a class="dropdown-item" href="#">Acessórios</a></li>
-                      <li><a class="dropdown-item" href="#">Placas OSB</a></li>
-                      <li><a class="dropdown-item" href="#">Membrana</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gesso</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Placas 3D</a></li>
-                      <li><a class="dropdown-item" href="#">Cola Gesso</a></li>
-                      <li><a class="dropdown-item" href="#">Sanca</a></li>
-                      <li><a class="dropdown-item" href="#">Plaquetas</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Isolamento Acústico</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Lã de Vidro</a></li>
-                      <li><a class="dropdown-item" href="#">Lã de Rocha</a></li>
-                      <li><a class="dropdown-item" href="#">Lã de Pet</a></li>
-                      
-                    </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </nav>
-<br>
-    <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
-        <div class = "container h-100 d-flex align-items-center carousel-inner">
-            <div class = "text-center carousel-item active">
-                <h2 class = "text-capitalize text-white">best collection</h2>
-                <h1 class = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
-                <a href = "#" class = "btn mt-3 text-uppercase">shop now</a>
+    </nav>
+    <br>
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">best collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">shop now</a>
             </div>
-            <div class = "text-center carousel-item">
-                <h2 class = "text-capitalize text-white">best price & offer</h2>
-                <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
-                <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">best price & offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">new season</h1>
+                <a href="#" class="btn mt-3 text-uppercase">buy now</a>
             </div>
         </div>
 
-        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
-            <span class = "carousel-control-prev-icon"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
-            <span class = "carousel-control-next-icon"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
         </button>
     </header>
     <!-- end of header -->
 
     <!-- collection -->
-    <section id = "collection" class = "py-5">
-        <div class = "container">
-            <div class = "title text-center">
-                <h2 class = "position-relative d-inline-block">DryWall</h2>
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">DryWall</h2>
             </div>
 
-            <div class = "row g-0 ">
-                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = ".placa, .perfil, .acessorio ">Tudo</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".placa">Placas Drywall</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".perfil">Perfil</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".acessorio">Acessórios</button>
+            <div class="row g-0 ">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn"
+                        data-filter=".placa, .perfil, .acessorio ">Tudo</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".placa">Placas Drywall</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".perfil">Perfil</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".acessorio">Acessórios</button>
                 </div>
 
-                <div class = "collection-list mt-4 row gx-0 gy-3">
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][RF].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][RF].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Placa RF</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 perfil">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/MONTANTES/Cantoneira Perfurada 300cm.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Cantoneira 300cm.</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][PERFOMA].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Placa Perfoma</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 acessorio">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[MASSA] [DRYWALL].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Massa DryWall</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][RU].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Placa RU</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 perfil">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/MONTANTES/Emenda Para Perfil F-530.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Emenda Perfil</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][GYPSOM][001].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Placa GYPSOM</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 acessorio">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[LAN DE VIDRO] [001].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Lã de Vidro</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][ST].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Placa ST</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 perfil">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/MONTANTES/Trilho Pantográfico Reto 3M Kala.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Trilho Pantográfico</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][TOP].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Placa TOP</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 perfil">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/MONTANTES/Perfil de Teto para Estrutura Placas Gesso.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Perfil de Teto</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][RF][FORTÍSSIMA].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Placa RF Fortíssima</p>
-                            <span class = "fw-bold">$ 45.50</span>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa">
-                        <div class = "collection-img position-relative">
-                            <img src = "/imagens/DRYWALL/[PLACA][GYPSOM][002].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1">Placa GYPSOM</p>
+                            <p class="text-capitalize my-1">Placa RF</p>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">
-                               Detalhes
+                                Detalhes
+                            </button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container mt-5 mb-5">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-md-10">
+                                                    <div class="card">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="images p-3">
+                                                                    <div class="text-center p-4"> <img id="main-image"
+                                                                            src="/Imagens/GESSO/GESSO 3D [001].jpg"
+                                                                            width="250" /> </div>
+                                                                    <div class="thumbnail text-center"> <img
+                                                                            onclick="change_image(this)"
+                                                                            src="/Imagens/GESSO/GESSO 3D [002].jpg"
+                                                                            width="70"> <img
+                                                                            onclick="change_image(this)"
+                                                                            src="/Imagens/GESSO/GESSO 3D [004].jpg"
+                                                                            width="70"> </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="product p-4">
+                                                                    <div
+                                                                        class="d-flex justify-content-between align-items-center">
+                                                                        <div class="d-flex align-items-center"> <i
+                                                                                class="fa fa-long-arrow-left"></i> <span
+                                                                                class="ml-1">Back</span> </div> <i
+                                                                            class="fa fa-shopping-cart text-muted"></i>
+                                                                    </div>
+                                                                    <div class="mt-4 mb-3"> <span
+                                                                            class="text-uppercase text-muted brand">Gesso</span>
+                                                                        <h5 class="text-uppercase">GESSO 3D</h5>
+                                                                    </div>
+                                                                    <p class="about">Shop from a wide range of t-shirt
+                                                                        from orianz. Pefect for your everyday use, you
+                                                                        could pair it with a stylish pair of jeans or
+                                                                        trousers complete the look.</p>
+                                                                    <div class="sizes mt-5">
+                                                                        <h6 class="text-uppercase">Size</h6> <label
+                                                                            class="radio"> <input type="radio"
+                                                                                name="size" value="S" checked>
+                                                                            <span>S</span> </label> <label
+                                                                            class="radio"> <input type="radio"
+                                                                                name="size" value="M"> <span>M</span>
+                                                                        </label> <label class="radio"> <input
+                                                                                type="radio" name="size" value="L">
+                                                                            <span>L</span> </label> <label
+                                                                            class="radio"> <input type="radio"
+                                                                                name="size" value="XL"> <span>XL</span>
+                                                                        </label> <label class="radio"> <input
+                                                                                type="radio" name="size" value="XXL">
+                                                                            <span>XXL</span> </label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h6 class="text-uppercase">Size</h6> <label
+                                                                            class="radio"> <input type="radio"
+                                                                                name="size" value="S" checked>
+                                                                            <span>S</span> </label> <label
+                                                                            class="radio"> <input type="radio"
+                                                                                name="size" value="M"> <span>M</span>
+                                                                        </label> <label class="radio"> <input
+                                                                                type="radio" name="size" value="L">
+                                                                            <span>L</span> </label> <label
+                                                                            class="radio"> <input type="radio"
+                                                                                name="size" value="XL"> <span>XL</span>
+                                                                        </label> <label class="radio"> <input
+                                                                                type="radio" name="size" value="XXL">
+                                                                            <span>XXL</span> </label>
+                                                                    </div>
+                                                                    <div class="col-md-4 quantity">
+                                                                        <label for="quantity">Quantity:</label>
+                                                                        <input id="quantity" type="number" value ="1" class="form-control quantity-input">
+                                                                    </div>
+                                                                    <div class="row pt-3">
+                                                                        <div class="col-md-12 pt-0">
+                                                                          <ul class="nav nav-tabs">
+                                                                            <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse1" role="button"
+                                                                              aria-expanded="false" aria-controls="multiCollapse1">Ficha Tecnica</a>
+                                                                            <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse2" role="button"
+                                                                              aria-expanded="false" aria-controls="multiCollapse2">Comentarios</a>
+                                                                            <div class="row">
+                                                                              <div class="col">
+                                                                                <div class="collapse multi-collapse" id="multiCollapse1">
+                                                                                  <div class="card card-body">
+                                                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ullam
+                                                                                    quae, sapiente illum dolores omnis perferendis, vitae non assumenda rem
+                                                                                    consequuntur officiis maiores, consectetur enim minima beatae voluptatum
+                                                                                    facilis quibusdam?
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="row w-100">
+                                                                              <div class="col">
+                                                                                <div class="collapse multi-collapse" id="multiCollapse2">
+                                                                                  <div class="card card-body">
+                                                                                    <ul class="list-group w-100">
+                                                                                      <li class="list-group-item">Germán Escobar comentó hace dos días</li>
+                                                                                      <li class="list-group-item">Esta camiseta está
+                                                                                        increíble, la quiero!
+                                                                                      </li>
+                                                                                    </ul>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </ul>
+                                                                        </div>
+                                                                      </div>
+                                                                    <div class="cart mt-4 align-items-center"> 
+                                                                        <button
+                                                                            class="btn btn-danger text-uppercase mr-2 px-4">Adicionar ao carrinho
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 perfil">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/MONTANTES/Cantoneira Perfurada 300cm.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Cantoneira 300cm.</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][PERFOMA].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Placa Perfoma</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acessorio">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[MASSA] [DRYWALL].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Massa DryWall</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][RU].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Placa RU</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 perfil">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/MONTANTES/Emenda Para Perfil F-530.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Emenda Perfil</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][GYPSOM][001].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Placa GYPSOM</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acessorio">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[LAN DE VIDRO] [001].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lã de Vidro</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][ST].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Placa ST</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 perfil">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/MONTANTES/Trilho Pantográfico Reto 3M Kala.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Trilho Pantográfico</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][TOP].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Placa TOP</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 perfil">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/MONTANTES/Perfil de Teto para Estrutura Placas Gesso.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Perfil de Teto</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][RF][FORTÍSSIMA].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Placa RF Fortíssima</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
+                        <div class="collection-img position-relative">
+                            <img src="/imagens/DRYWALL/[PLACA][GYPSOM][002].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">xxx</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Placa GYPSOM</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Detalhes
                             </button>
                             <!-- Modal -->
                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
@@ -406,165 +577,174 @@
             </div>
         </div>
     </section>
-    
-<!-- SECTION STEEL FRAME -->
 
-    <section id = "collection" class = "py-5">
-        <div class = "container">
-            <div class = "title text-center">
-                <h2 class = "position-relative d-inline-block">Steel Frame</h2>
+    <!-- SECTION STEEL FRAME -->
+
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Steel Frame</h2>
             </div>
 
-            <div class = "row g-0 ">
-                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = ".guia, .painel, .montante">Tudo</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".guia">Guia</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".painel">Perfil</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".acessorio02">Acessórios</button>
+            <div class="row g-0 ">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn"
+                        data-filter=".guia, .painel, .montante">Tudo</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".guia">Guia</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".painel">Perfil</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".acessorio02">Acessórios</button>
                 </div>
 
-                <div class = "collection-list mt-4 row gx-0 gy-3">
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 guia">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/MONTANTES/Cantoneira Perfurada 300cm.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 guia">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/MONTANTES/Cantoneira Perfurada 300cm.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Cantoneira 300cm</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Cantoneira 300cm</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 painel">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/MONTANTES/Tabica Lisa Pintada 3m Perfil Líder.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 painel">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/MONTANTES/Tabica Lisa Pintada 3m Perfil Líder.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Cantoneira 300cm.</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Cantoneira 300cm.</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 acessorio02">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/FITAS/[FITA PARA CIMENTICIA].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acessorio02">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/FITAS/[FITA PARA CIMENTICIA].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Fita Cimenticia</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Fita Cimenticia</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 guia">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/MONTANTES/Emenda Para Perfil F-530.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 guia">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/MONTANTES/Emenda Para Perfil F-530.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Emenda F-530</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Emenda F-530</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 painel">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/MONTANTES/Montante Drywall 70mm 3m.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 painel">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/MONTANTES/Montante Drywall 70mm 3m.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Emenda Perfil</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Emenda Perfil</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 acessorio02">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/FITAS/[FITA CANTO ANCORA ALUMINIO].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acessorio02">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/FITAS/[FITA CANTO ANCORA ALUMINIO].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Fita Aluminio</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Fita Aluminio</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 guia">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/MONTANTES/MONTANTE 48mm.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 guia">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/MONTANTES/MONTANTE 48mm.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Montante 48mm.</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Montante 48mm.</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 painel">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/MONTANTES/Tabica Lisa Pintada 3m Perfil Líder.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 painel">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/MONTANTES/Tabica Lisa Pintada 3m Perfil Líder.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Trilho Pantográfico</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Trilho Pantográfico</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
                 </div>
@@ -573,162 +753,171 @@
     </section>
     <!-- end of collection -->
 
-    <section id = "collection" class = "py-5">
-        <div class = "container">
-            <div class = "title text-center">
-                <h2 class = "position-relative d-inline-block">Gesso</h2>
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Gesso</h2>
             </div>
 
-            <div class = "row g-0 ">
-                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = ".placar3d, .plaquetas, .sanca">Tudo</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".placa3d">Placas 3D</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".plaquetas">Plaquetas</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".sanca">Sanca</button>
+            <div class="row g-0 ">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn"
+                        data-filter=".placar3d, .plaquetas, .sanca">Tudo</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".placa3d">Placas 3D</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".plaquetas">Plaquetas</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".sanca">Sanca</button>
                 </div>
 
-                <div class = "collection-list mt-4 row gx-0 gy-3">
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/GESSO 3D [001].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/GESSO 3D [001].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">DryWall</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">DryWall</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 plaquetas">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/[PLAQUETA].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 plaquetas">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/[PLAQUETA].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Placa de Gesso.</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Placa de Gesso.</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sanca">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/[SANCA] [001].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 sanca">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/[SANCA] [001].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Parafusadeira</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Parafusadeira</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/GESSO 3D [002].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/GESSO 3D [002].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">DryWall</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">DryWall</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 plaquetas">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/GESSO 3D [004].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 plaquetas">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/GESSO 3D [004].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Emenda Perfil</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Emenda Perfil</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sanca">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/[SANCA] [002].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 sanca">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/[SANCA] [002].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Martelo</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Martelo</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/GESSO 3D [003].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/GESSO 3D [003].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">DryWall</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">DryWall</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 plaquetas">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagens/GESSO/GESSO 3D [001].jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 plaquetas">
+                        <div class="collection-img position-relative">
+                            <img src="/Imagens/GESSO/GESSO 3D [001].jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                         </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
                             </div>
-                            <p class = "text-capitalize my-1">Trilho Pantográfico</p>
-                            <span class = "fw-bold">$ 45.50</span>
+                            <p class="text-capitalize my-1">Trilho Pantográfico</p>
+                            <span class="fw-bold">$ 45.50</span>
                         </div>
                     </div>
                 </div>
@@ -737,66 +926,70 @@
     </section>
 
     <!-- special products -->
-    <section id = "special" class = "py-5">
-        <div class = "container">
-            <div class = "title text-center py-5">
-                <h2 class = "position-relative d-inline-block">Promoções</h2>
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Promoções</h2>
             </div>
 
-            <div class = "special-list row g-0">
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src = "/imagens/FERRAMENTAS/[FERRAMENTAS] [MARTELO].jpg" class = "w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="/imagens/FERRAMENTAS/[FERRAMENTAS] [MARTELO].jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
                         </span>
                     </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">Trena 8M</p>
-                        <span class = "fw-bold d-block">$ 45.50</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Trena 8M</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src = "/imagens/FERRAMENTAS/[ESPATULA INOX 80MM].jpg" class = "w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="/imagens/FERRAMENTAS/[ESPATULA INOX 80MM].jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
                         </span>
                     </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">Espatula INOX</p>
-                        <span class = "fw-bold d-block">$ 45.50</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Espatula INOX</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src = "/imagens/FERRAMENTAS/[FERRAMENTA] [TESOURA AVIAÇÃO].jpg" class = "w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="/imagens/FERRAMENTAS/[FERRAMENTA] [TESOURA AVIAÇÃO].jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
                         </span>
                     </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">Tesoura Aviação</p>
-                        <span class = "fw-bold d-block">$ 45.50</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Tesoura Aviação</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src = "/imagens/FERRAMENTAS/[ESPATULA PLASTICO TIGRE].jpg" class = "w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="/imagens/FERRAMENTAS/[ESPATULA PLASTICO TIGRE].jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
                         </span>
                     </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">Espatula Plastico</p>
-                        <span class = "fw-bold d-block">$ 45.50</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Espatula Plastico</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -805,13 +998,14 @@
     <!-- end of special products -->
 
     <!-- blogs -->
-    <section id = "offers" class = "py-5">
-        <div class = "container">
-            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
-                <div class = "offers-content">
-                    <span class = "text-white">Discount Up To 40%</span>
-                    <h2 class = "mt-2 mb-4 text-white">Grand Sale Offer!</h2>
-                    <a href = "#" class = "btn">Buy Now</a>
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div
+                class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class="offers-content">
+                    <span class="text-white">Discount Up To 40%</span>
+                    <h2 class="mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+                    <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
         </div>
@@ -819,56 +1013,72 @@
     <!-- end of blogs -->
 
     <!-- blogs -->
-    <section id = "blogs" class = "py-5">
-        <div class = "container">
-            <div class = "title text-center py-5">
-                <h2 class = "position-relative d-inline-block">Sistema DryWall</h2>
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Sistema DryWall</h2>
             </div>
 
-            <div class = "row g-3">
-                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                    <img src = "/imagens/ILUSTRAÇÃO/[ILUSTRACÃO][PAREDE].jpg" alt = "">
-                    <div class = "card-body px-0">
-                        <h4 class = "card-title">Paredes Drywall</h4>
-                        <p class = "card-text mt-3 text-muted">Para a construção de uma parede Drywall existem inúmeros sistemas possíveis. O tipo de sistema ideal para a parede do seu projeto depende de algumas variáveis como: índice de eficiência acústico, índice de eficiência mecânico, tipo de uso do local (úmido, seco, etc), entre outros. Paredes Drywall podem ser utilizadas para as mais variadas funções, 
-                            desde uma simples separação de ambientes até a segurança de um cofre ou ainda para proteção contra radiação em uma sala de Raio-X. 
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="/imagens/ILUSTRAÇÃO/[ILUSTRACÃO][PAREDE].jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Paredes Drywall</h4>
+                        <p class="card-text mt-3 text-muted">Para a construção de uma parede Drywall existem inúmeros
+                            sistemas possíveis. O tipo de sistema ideal para a parede do seu projeto depende de algumas
+                            variáveis como: índice de eficiência acústico, índice de eficiência mecânico, tipo de uso do
+                            local (úmido, seco, etc), entre outros. Paredes Drywall podem ser utilizadas para as mais
+                            variadas funções,
+                            desde uma simples separação de ambientes até a segurança de um cofre ou ainda para proteção
+                            contra radiação em uma sala de Raio-X.
                             Conheça abaixo os sistemas de construção Gypsom:</p>
-                        <p class = "card-text">
-                            <small class = "text-muted">
-                                <span class = "fw-bold">Fonte: </span>Gypsum DryWall
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Fonte: </span>Gypsum DryWall
                             </small>
                         </p>
-                        <a href = "#" class = "btn">Mais Detalhes</a>
+                        <a href="#" class="btn">Mais Detalhes</a>
                     </div>
                 </div>
 
-                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                    <img src = "/imagens/ILUSTRAÇÃO/[ILUSTRAÇÃO][FORRO].jpg" alt = "">
-                    <div class = "card-body px-0">
-                        <h4 class = "card-title">Forro Drywall</h4>
-                        <p class = "card-text mt-3 text-muted">Existem diversos tipos de especificações para forro de drywall, para identificar a melhor para o seu projeto,
-                             você deve considerar as características particulares do local além do tipo de construção. Diversos tipos de estrutura podem receber a instalação do Forro de drywall.
-                              Estas estruturas para fixação do forro vão depender do tipo de construção em que ele vai ser aplicado, por esse motivo possui tanta versatilidade.</p>
-                        <p class = "card-text">
-                            <small class = "text-muted">
-                                <span class = "fw-bold">Fonte: </span>Gypsum DryWall
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="/imagens/ILUSTRAÇÃO/[ILUSTRAÇÃO][FORRO].jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Forro Drywall</h4>
+                        <p class="card-text mt-3 text-muted">Existem diversos tipos de especificações para forro de
+                            drywall, para identificar a melhor para o seu projeto,
+                            você deve considerar as características particulares do local além do tipo de construção.
+                            Diversos tipos de estrutura podem receber a instalação do Forro de drywall.
+                            Estas estruturas para fixação do forro vão depender do tipo de construção em que ele vai ser
+                            aplicado, por esse motivo possui tanta versatilidade.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Fonte: </span>Gypsum DryWall
                             </small>
                         </p>
-                        <a href = "#" class = "btn">Mais Detalhes</a>
+                        <a href="#" class="btn">Mais Detalhes</a>
                     </div>
                 </div>
 
-                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                    <img src = "/imagens/ILUSTRAÇÃO/[ILUSTRAÇÃO][PAREDES].jpg" alt = "">
-                    <div class = "card-body px-0">
-                        <h4 class = "card-title">Revestimento Drywall</h4>
-                        <p class = "card-text mt-3 text-muted">O Revestimento de paredes com Drywall consistem em aplicar diretamente sobre a alvenaria as chapas de drywall por meio de colagem ou estrutura em aço galvanizado. Este tipo de sistema é utilizado por ser mais rápido e substituindo a etapa de chapisco , emboço e reboco da alvenaria tradicional e permite cobrir encanamentos, fios, e instalações em geral. Além do acabamento das paredes de alvenaria em obras novas, o Revestimento em drywall também pode ser utilizado na reforma e recuperação de antigas edificações como, por exemplo, na transformação de velhos galpões e prédios industriais em shoppings, museus, casas de espetáculos ou ainda no revestimento de construções em Container.</p>
-                        <p class = "card-text">
-                            <small class = "text-muted">
-                                <span class = "fw-bold">Fonte: </span>Gypsum DryWall
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="/imagens/ILUSTRAÇÃO/[ILUSTRAÇÃO][PAREDES].jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Revestimento Drywall</h4>
+                        <p class="card-text mt-3 text-muted">O Revestimento de paredes com Drywall consistem em aplicar
+                            diretamente sobre a alvenaria as chapas de drywall por meio de colagem ou estrutura em aço
+                            galvanizado. Este tipo de sistema é utilizado por ser mais rápido e substituindo a etapa de
+                            chapisco , emboço e reboco da alvenaria tradicional e permite cobrir encanamentos, fios, e
+                            instalações em geral. Além do acabamento das paredes de alvenaria em obras novas, o
+                            Revestimento em drywall também pode ser utilizado na reforma e recuperação de antigas
+                            edificações como, por exemplo, na transformação de velhos galpões e prédios industriais em
+                            shoppings, museus, casas de espetáculos ou ainda no revestimento de construções em
+                            Container.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Fonte: </span>Gypsum DryWall
                             </small>
                         </p>
-                        <a href = "#" class = "btn">Mais Detalhes</a>
+                        <a href="#" class="btn">Mais Detalhes</a>
                     </div>
                 </div>
             </div>
@@ -877,18 +1087,21 @@
     <!-- end of blogs -->
 
     <!-- about us -->
-    <section id = "about" class = "py-5">
-        <div class = "container">
-            <div class = "row gy-lg-5 align-items-center">
-                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
-                    <div class = "title pt-3 pb-5">
-                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
                     </div>
-                    <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi
+                        exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium
+                        velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
                 </div>
-                <div class = "col-lg-6 order-lg-0">
-                    <img src = "/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt = "" class = "img-fluid">
+                <div class="col-lg-6 order-lg-0">
+                    <img src="/imagens/ANUNCIO/[ANUNCIO] [GDS] [001].png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -896,83 +1109,83 @@
     <!-- end of about us -->
 
     <!-- popular -->
-    <section id = "popular" class = "py-5">
-        <div class = "container">
-            <div class = "title text-center pt-3 pb-5">
-                <h2 class = "position-relative d-inline-block ms-4">Produtos Populares</h2>
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">Produtos Populares</h2>
             </div>
 
-            <div class = "row">
-                <div class = "col-md-6 col-lg-4 row g-3">
-                    <h3 class = "fs-5">Mais Vendidos</h3>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Mais Vendidos</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
                         <div>
-                            <p class = "mb-0">Blue Shirt</p>
+                            <p class="mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
                         <div>
-                            <p class = "mb-0">Blue Shirt</p>
+                            <p class="mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
                         <div>
-                            <p class = "mb-0">Blue Shirt</p>
-                            <span>$ 20.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "col-md-6 col-lg-4 row g-3">
-                    <h3 class = "fs-5">Maior Desconto</h3>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
-                        <div>
-                            <p class = "mb-0">Blue Shirt</p>
-                            <span>$ 20.00</span>
-                        </div>
-                    </div>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
-                        <div>
-                            <p class = "mb-0">Blue Shirt</p>
-                            <span>$ 20.00</span>
-                        </div>
-                    </div>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
-                        <div>
-                            <p class = "mb-0">Blue Shirt</p>
+                            <p class="mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
                 </div>
 
-                <div class = "col-md-6 col-lg-4 row g-3">
-                    <h3 class = "fs-5">On Sale</h3>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Maior Desconto</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
                         <div>
-                            <p class = "mb-0">Blue Shirt</p>
+                            <p class="mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
                         <div>
-                            <p class = "mb-0">Blue Shirt</p>
+                            <p class="mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
-                    <div class = "d-flex align-items-start justify-content-start">
-                        <img src = "/Imagens/LOGO/[LOGO][SANDRINHO].png" alt = "" class = "img-fluid pe-3 w-25">
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
                         <div>
-                            <p class = "mb-0">Blue Shirt</p>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">On Sale</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Imagens/LOGO/[LOGO][SANDRINHO].png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
                             <span>$ 20.00</span>
                         </div>
                     </div>
@@ -983,17 +1196,18 @@
     <!-- end of popular -->
 
     <!-- sancasletter -->
-    <section id = "newsletter" class = "py-5">
-        <div class = "container">
-            <div class = "d-flex flex-column align-items-center justify-content-center">
-                <div class = "title text-center pt-3 pb-5">
-                    <h2 class = "position-relative d-inline-block ms-4">Fale c om Nossos vendedores</h2>
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Fale c om Nossos vendedores</h2>
                 </div>
 
-                <p class = "text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem officia accusantium maiores quisquam dolorum?</p>
-                <div class = "input-group mb-3 mt-3">
-                    <input type = "text" class = "form-control" placeholder="Enter Your Email ...">
-                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem
+                    officia accusantium maiores quisquam dolorum?</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Email ...">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -1001,90 +1215,91 @@
     <!-- end of newsletter -->
 
     <!-- footer -->
-    <footer class = "bg-dark py-5">
-        <div class = "container">
-            <div class = "row text-white g-4">
-                <div class = "col-md-6 col-lg-3">
-                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Attire</a>
-                    <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Attire</a>
+                    <p class="text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
                 </div>
 
-                <div class = "col-md-6 col-lg-3">
-                    <h5 class = "fw-light">Links</h5>
-                    <ul class = "list-unstyled">
-                        <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-muted">
-                                <i class = "fas fa-chevron-right me-1"></i> Home
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
                             </a>
                         </li>
-                        <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-muted">
-                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Collection
                             </a>
                         </li>
-                        <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-muted">
-                                <i class = "fas fa-chevron-right me-1"></i> Blogs
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Blogs
                             </a>
                         </li>
-                        <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-muted">
-                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <div class = "col-md-6 col-lg-3">
-                    <h5 class = "fw-light mb-3">Contact Us</h5>
-                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
-                        <span class = "me-3">
-                            <i class = "fas fa-map-marked-alt"></i>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
                         </span>
-                        <span class = "fw-light">
+                        <span class="fw-light">
                             Albert Street, New York, AS 756, United States of America
                         </span>
                     </div>
-                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
-                        <span class = "me-3">
-                            <i class = "fas fa-envelope"></i>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
                         </span>
-                        <span class = "fw-light">
+                        <span class="fw-light">
                             attire.support@gmail.com
                         </span>
                     </div>
-                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
-                        <span class = "me-3">
-                            <i class = "fas fa-phone-alt"></i>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
                         </span>
-                        <span class = "fw-light">
+                        <span class="fw-light">
                             +9786 6776 236
                         </span>
                     </div>
                 </div>
 
-                <div class = "col-md-6 col-lg-3">
-                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
                     <div>
-                        <ul class = "list-unstyled d-flex">
+                        <ul class="list-unstyled d-flex">
                             <li>
-                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                    <i class = "fab fa-facebook-f"></i>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                    <i class = "fab fa-twitter"></i>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                    <i class = "fab fa-instagram"></i>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                    <i class = "fab fa-pinterest"></i>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
                                 </a>
                             </li>
                         </ul>
@@ -1099,12 +1314,13 @@
 
 
     <!-- jquery "js/jquery-3.6.0.js"-->
-    <script src = "/Js/jquery-3.6.1.js"></script>
+    <script src="/Js/jquery-3.6.1.js"></script>
     <!-- isotope js -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- bootstrap js "bootstrap-5.0.2-dist/js/bootstrap.min.js"-->
-    <script src = "/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <!-- custom js js/script.js-->
-    <script src = "/Js/ecommerce.js"></script>
+    <script src="/Js/ecommerce.js"></script>
 </body>
+
 </html>
