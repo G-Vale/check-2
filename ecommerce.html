@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- custom css css/main.css-->
     <link rel="stylesheet" href="/css/produtos.css" />
   </head>
@@ -738,8 +739,232 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Arame</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aramedrywall"
+                >
+                  Detalhes
+                </button>
               </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="aramedrywall"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][ARAME].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][ARAME].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][ARAME].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Arame</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Vonder®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Conteúdo da Embalagem:1 Rolo de arame galvanizado com 1 kg Descrição:Arame galvanizado comercial BWG 18 1,24 mm VONDERAplicações e dicas de uso:Ideal para inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e indústrias em geral.
+                                    </p><!--
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>3000mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>6000mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Material: Aço Galvanizado
+                                                  <br />
+                                                  Norma Técnica: NBR - 15.217<br />
+                                                  Diâmetro: 18 BWG - 1,24 mm<br />
+                                                  Comprimento 106,8 m<br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Ideal para inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e indústrias em geral. Não indicado para aplicação em gesso
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
 
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa">
@@ -1261,7 +1486,232 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Fita Papel</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#fitapapel"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="fitapapel"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][FITA PAPEL].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][FITA PAPEL].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][FITA PAPEL].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Fita Papel</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Ancora®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Fita de Papel microperfurada com tiras de alumínio para reforço dos cantos de drywall Drycorner FCD5030.
+                                    </p><!--
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>3000mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>6000mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                             
+                                                  Marca: Ancora<br>
+                                                  Largura: 50mm<br />
+                                                  Comprimento 30m<br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Alta resistência mecânica;
+                                                         Deve ser utilizada somente com massa de drywall;
+                                                                  Evita formação de bolhas, fissuras ou trincas;
+                                                        Fita de papel com inserto de alumínio para reforço em cantos.
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1541,7 +1991,7 @@
               <div class="text-center">
                 <div class="rating mt-3">
                   <span class="text-primary"><i class="fas fa-star"></i></span>
-                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span><!-- Modal -->
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                   <span class="text-primary"><i class="fas fa-star"></i></span>
@@ -1806,7 +2256,230 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Fita Termoacustica</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#fitatermo"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="fitatermo"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][FITA TERMOACUSTICA].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][FITA TERMOACUSTICA].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][FITA TERMOACUSTICA].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Fita Banda Acústica</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Perfilar®</span
+                                      >
+                                    </div>
+                                    <p class="about">A Fita Adesiva Banda acústica é aplicada nas guias e montantes da construção. A aplicação da banda acústica melhora na performance acústica, pois impede a passagem de ruídos pelas frestas entre os perfis eos elementos estruturais..
+                                      
+                                    </p>
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>10m</span> </label
+                                      ><br /><!--
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>6000mm</span>
+                                      </label>
+                                      <br />-->
+                                      <span>----------------</span>
+                                    </div>
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                
+                                                  Material: Espuma Elastomérica<br>
+                                                  Espessura: 4mm<br />
+                                                  Comprimento 10m <br />
+                                                  Largura: 48mm/70mm/90mm
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Isolamento térmico para baixas ou altas temperaturas de em tanques, tubos de cobre, ferro ou alumínio, em sistemas de ar condicionado, refrigeração, aquecimento e várias instalações industriais.
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
               </div>
             </div>
 
@@ -2057,7 +2730,230 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Lã de Vidro</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ladevidro"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="ladevidro"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][LAN DE VIDRO].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][LAN DE VIDRO].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][LAN DE VIDRO].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Lã de Vidro</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Isover®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Diferente do que algumas pessoas imaginam, a lã de vidro se adequa a qualquer tipo de vedação interna, inclusive em áreas sujeitas à umidade, como cozinhas e banheiros. 
+                                    </p><!--
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>3000mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>6000mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Unidade de Venda: Rolo<br />
+                                                  Altura: 1200cm
+                                                  Largura: 12500cm<br />
+                                                  Espessura: 0,05cm<br />
+                                                  Comprimento 1,20m<br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      As lãs de vidro ISOVER Wallfelt 4+ foram desenvolvidas para proporcionar isolamento de paredes em sistemas de construção a seco: drywall e light steel frame.
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -2080,8 +2976,234 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
-                <p class="text-capitalize my-1">Montate</p>
-                <span class="fw-bold">$ 45.50</span>
+                <p class="text-capitalize my-1">Montante</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#montanteaço"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="montanteaço"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/PERFIL/[PERFIL][DRYWALL][MONTATE].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/PERFIL/[PERFIL][DRYWALL][MONTATE].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/PERFIL/[PERFIL][DRYWALL][MONTATE].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Montante</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Perfilar®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Perfil metálico utilizado para a estruturação vertical de paredes, revestimentos estruturados e como estrutura horizontal de forros STUD.
+                                    </p>
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>3000mm</span> </label
+                                      ><br /><!--
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>6000mm</span>
+                                      </label>
+                                      <br />-->
+                                      <span>----------------</span>
+                                    </div>
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Material: Aço Galvanizado
+                                                  <br />
+                                                  Norma Técnica: NBR - 15.217<br />
+                                                  Espessura: 0,5 mm<br />
+                                                  Comprimento 3000mm/6000mm<br />
+                                                  Galvanização: 275g/m²<br>
+                                                  Largura: 48mm/70mm/90mm
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Os perfis são produzidos conforme norma NBR 15217/09.
+                                                      Inscritos no programa setorial da qualidade.
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
               </div>
             </div>
 
@@ -2105,7 +3227,238 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Massa DryWall</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#massadrywall"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="massadrywall"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/imagens/UTENCILIOS/[MASSA] [DRYWALL].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/imagens/UTENCILIOS/[MASSA] [DRYWALL].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/imagens/UTENCILIOS/[MASSA] [DRYWALL].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Massa Fina DryWall</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Holdflex®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Massa pronta desenvolvida para tratamento de juntas em placas e acabamento superficial fino sobre Drywall. Apresenta ótima aderência tanto no substrato, como na fita.
+                                    </p>
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                       Peso
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>5kg</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>15kg</span>
+                                      </label><br>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>28kg</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div><!--
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Secagem: 5 a 6 horas
+                                                  <br />
+                                                  Consumo: 500 a 700 g/m2<br />
+                                                  Peso: 5kg/15kg/28kg<br />
+                                                  <br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Produto pronto, sendo apenas necessário misturar mecanicamente ou manualmente antes do uso para homogeneização do material.
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -2354,7 +3707,228 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Regulador Ômega</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Reguladoromega"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Reguladoromega"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/imagens/PERFIL/[PERFIL][DRYWALL][REGULADOR OMEGA].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/imagens/PERFIL/[PERFIL][DRYWALL][REGULADOR OMEGA].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/imagens/PERFIL/[PERFIL][DRYWALL][REGULADOR OMEGA].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Regulador Ômega</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >F530</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Esse regulador F530 é utilizado para regulagem de altura simples com sistema de abas, ideal para alinhar forro de gesso acartonado drywall. Por ser um regular normal para perfil F-530, ele é usado em forros que ficam abaixo de telhados.</p>
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Tamanho
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>12cm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>7cm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div><!--
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Material: Aço Galvanizado
+                                                  <br />
+                                                  Norma Técnica: NBR - 15.217<br />
+                                                  Comprimento: 12cm/7cm<br />
+                                                  Galvanização: Z275<br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Uso indicado: Peça que liga o tirante ao Perfil. Possui mola que regula a altura do entreforro                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -2593,7 +4167,239 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Lã de Rocha</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#laderocha"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="laderocha"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/imagens/UTENCILIOS/[UTENCILIOS][LÃ DE ROCHA].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/imagens/UTENCILIOS/[UTENCILIOS][LÃ DE ROCHA].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/imagens/UTENCILIOS/[UTENCILIOS][LÃ DE ROCHA].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Arame</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Vonder®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Conteúdo da Embalagem:1 Rolo de arame galvanizado com 1 kg Descrição:Arame galvanizado comercial BWG 18 1,24 mm VONDERAplicações e dicas de uso:Ideal para inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e indústrias em geral.
+                                    </p><!--
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>3000mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>6000mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Material: Aço Galvanizado
+                                                  <br />
+                                                  Norma Técnica: NBR - 15.217<br />
+                                                  Diâmetro: 18 BWG - 1,24 mm<br />
+                                                  Comprimento 106,8 m<br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Ideal para inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e indústrias em geral. Não indicado para aplicação em gesso
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button class="btn btn-default" id="btn-confirm">Adicionar Carrinho</button>
+                                          <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="mi-modal">
+                                            <div class="modal-dialog modal-sm">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title" id="myModalLabel">Confirmar</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-default" id="modal-btn-si">Sim</button>
+                                                  <button type="button" class="btn btn-primary" id="modal-btn-no">Não</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -2867,7 +4673,230 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Lã de Pet</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aramedrywall"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="aramedrywall"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][ARAME].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][ARAME].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIO][ARAME].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Arame</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Vonder®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Conteúdo da Embalagem:1 Rolo de arame galvanizado com 1 kg Descrição:Arame galvanizado comercial BWG 18 1,24 mm VONDERAplicações e dicas de uso:Ideal para inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e indústrias em geral.
+                                    </p><!--
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>3000mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>6000mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Material: Aço Galvanizado
+                                                  <br />
+                                                  Norma Técnica: NBR - 15.217<br />
+                                                  Diâmetro: 18 BWG - 1,24 mm<br />
+                                                  Comprimento 106,8 m<br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Ideal para inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e indústrias em geral. Não indicado para aplicação em gesso
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -3108,8 +5137,258 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
-                <p class="text-capitalize my-1">tIRANTE</p>
-                <span class="fw-bold">$ 45.50</span>
+                <p class="text-capitalize my-1">Tirante</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tirante"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="tirante"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/PERFIL/[PERFIL][DRYWALL][TIRANTE].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/PERFIL/[PERFIL][DRYWALL][TIRANTE].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/PERFIL/[PERFIL][DRYWALL][TIRANTE].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Tirante</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Drywall®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      Tirante rigído é uma peça fundamental para a estruturação de forros gesso, Modular e PCV, junto com o regulador o mesmo tem função de sustentar o forro no teto, diferente de outros métodos de afixação ele nao o forro fazer movimentos para cima evitando possíveis trincas e fissuras.
+                                    </p>
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Comprimento
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>25cm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>30cm</span>
+                                      </label>
+                                      <br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>40cm</span>
+                                      </label>
+                                      <br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>50cm</span>
+                                      </label>
+                                      <br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>1m</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div><!--
+                                    <div>
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Material: Aço Galvanizado
+                                                  <br />
+                                                  Norma Técnica: NBR - 15.217<br />
+                                                  <br />
+                                                  Comprimento 25cm/30cm/45cm/50cm/1m<br />
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      Peça utilizada para a ligação entre suporte nivelador e superfícies para fixação de sistemas de forros.
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -3200,7 +5479,229 @@
                   <span class="text-primary"><i class="fas fa-star"></i></span>
                 </div>
                 <p class="text-capitalize my-1">Massa corrida</p>
-                <span class="fw-bold">$ 45.50</span>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#massacorrida"
+                >
+                  Detalhes
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="massacorrida"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Detalhes
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5 mb-5">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="images p-3">
+                                    <div class="text-center p-4">
+                                      <img
+                                        id="main-image"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][MASSA CORRIDA].jpg"
+                                        width="250"
+                                      />
+                                    </div>
+                                    <div class="thumbnail text-center">
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][MASSA CORRIDA].jpg"
+                                        width="70"
+                                      />
+                                      <img
+                                        onclick="change_image(this)"
+                                        src="/Imagens/UTENCILIOS/[UTENCILIOS][MASSA CORRIDA].jpg"
+                                        width="70"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="product p-4">
+                                    <div class="mt-4 mb-3">
+                                      <h5 class="text-uppercase">Massa corrida</h5>
+                                      <span
+                                        class="text-uppercase text-muted brand"
+                                        >Active®</span
+                                      >
+                                    </div>
+                                    <p class="about">
+                                      A Massa Corrida serve para uniformizar e corrigir algumas imperfeições da parede e o uso dela é apenas em ambientes internos.
+                                    </p>
+                                    <div class="sizes mt-5">
+                                      <h6 class="text-uppercase">
+                                        Tipo de Massa:
+                                      </h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>Massa corrida</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>Massa acrílica</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>
+                                    <div><!--
+                                      <h6 class="text-uppercase">Dimenções</h6>
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="S"
+                                          checked
+                                        />
+                                        <span>48mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>70mm</span> </label
+                                      ><br />
+                                      <label class="radio">
+                                        <input
+                                          type="radio"
+                                          name="size"
+                                          value="M"
+                                        />
+                                        <span>90mm</span>
+                                      </label>
+                                      <br />
+                                      <span>----------------</span>
+                                    </div>-->
+                                    <div class="col-md-4 quantity">
+                                      <label for="quantity ">Quantidade:</label>
+                                      <input
+                                        id="quantity"
+                                        type="number"
+                                        value="1"
+                                        class="form-control quantity-input"
+                                      />
+                                    </div>
+                                    <div class="row pt-3">
+                                      <div class="col-md-12 pt-0">
+                                        <ul class="nav nav-tabs">
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse1"
+                                            >Ficha Tecnica</a
+                                          >
+                                          <a
+                                            class="nav-link"
+                                            data-bs-toggle="collapse"
+                                            href="#multiCollapse2"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapse2"
+                                            >Detalhamento</a
+                                          >
+                                          <div class="row">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse1"
+                                              >
+                                                <div class="card card-body">
+                                                  Marca: Active<br />
+                                                  
+                                                  Peso: 15kg<br />
+                                                  
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row w-100">
+                                            <div class="col">
+                                              <div
+                                                class="collapse multi-collapse"
+                                                id="multiCollapse2"
+                                              >
+                                                <div class="card card-body">
+                                                  <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                      <p>
+                                                        <strong
+                                                          >Descrição</strong
+                                                        >
+                                                      </p>
+                                                      A Massa Corrida serve para uniformizar e corrigir algumas imperfeições da parede e o uso dela é apenas em ambientes internos.
+                                                      E aqui na Casa do Pintor você encontra a Massa Corrida da Active Revestimentos.                                                     
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="cart mt-4 align-items-center">
+                                      <button
+                                        class="btn btn-danger text-uppercase mr-2 px-4"
+                                      >
+                                        Adicionar ao carrinho
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Fechar
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
