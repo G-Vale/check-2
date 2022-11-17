@@ -1,37 +1,31 @@
-var wide1 = $('.scroll-container')[0].offsetWidth;
-var width1 = wide1;
-var count1 = $('.scroll-container .scroll-item').length;
-var next= $('.next')[0];
-$(next).click(function(){
- 
-if($(".count-indicator:first-child").hasClass('active')){
-  $(".back").removeClass('d-none');
+
+// jQuery Smooth Scroll
+$(".navbar a").on("click", function (e) {
+  if (this.hash !== "") {
+    e.preventDefault();
+
+    const hash = this.hash;
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      800
+    );
   }
-   $(".count-indicator.active").next().addClass('active');
-  $(".count-indicator.active").prev().removeClass('active');
-   if($(".count-indicator:last-child").hasClass('active')){
-  $(this).addClass('d-none');
-}else{$(this).removeClass('d-none');}
-    var container = $('.scroll-container')[0];
-    $(container).animate( { scrollLeft: '+='+width1 }, 500);
-}); 
-var back = $('.back')[0];
-$(back).click(function(){
-  if($(".count-indicator:last-child").hasClass('active')){
-  $(".next").removeClass('d-none');
-  }
- $(".count-indicator.active").prev().addClass('active');
-  $(".count-indicator.active").next().removeClass('active');
-    if($("span:first-child").hasClass('active')){
-  $(this).addClass('d-none');
-}else{ $(this).removeClass('d-none');}
-    var container = $('.scroll-container')[0];
-    $(container).animate( { scrollLeft: '-='+width1 }, 500);
 });
-$count2 = $( ".scroll-item" );
-for (i = 0; i < $count2.length; i=i+4) {
-  $(".indicators" ).append('<span class="count-indicator"></span>');
+
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+       if ($(this).scrollTop() > 100) {
+$('#scrollToTop').fadeIn();
+} else {
+$('#scrollToTop').fadeOut();
 }
-$(".count-indicator:first-child" ).addClass('active');
+  });
 
-
+  $('#scrollToTop').click(function(){
+$('html, body').animate({scrollTop : 0},800);
+return false;
+  }); 
+});
