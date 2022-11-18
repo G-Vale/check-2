@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
 html {
     height: 100%;  
 }
@@ -450,4 +452,25 @@ i:hover {
    width: 75%;
   }
 }
+
+/* about */
+#about{
+    background-color: #2d3142;
+}
+
+#about .pic{
+    height: 600px;
+    background: url("/Imagens/LOGO/HMCV4998.JPG") fixed no-repeat center;
+    background-size: cover;
+    border-bottom: 600px solid transparent;
+    border-left: 100px solid #2d3142;
+}
+
+#about .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+
 

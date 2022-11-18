@@ -13,12 +13,8 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/Principal.css" >
-    <link href="/Js/index.js">
-    
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link href="/Js/index.js">      
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -32,6 +28,25 @@
 
 <body>
   <!--NAV PRINCIPAL-->
+  <div  class="container-fluid  d-flex align-items-center">
+    <div class="input-group search-box  ">
+      <img class="col-2" src="/Imagens/LOGO/[LOGO][GDS].png">
+      <input class="col-5 text-white-50 bg-dark align-self-center mr-sm-2 d-inline-flex" id="search-friend" type="search" placeholder="Search by name..." aria-label="Search">
+    <button class="btn btn-outline-success align-self-center my-2 my-sm-0" type="submit">Search</button>
+    </div>
+    <a href="https://www.facebook.com/GDSGESSOEDRYWALL/" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/gdsgessoedrywall/" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=5541992907250&text&app_absent=0" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCuSn2nzCHtLE5O_3Byu0XdQ" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+                  <i class="bi bi-youtube"></i>
+                </a>
+  </div>
     <header id="header" class="header d-flex align-items-center">
       <nav class="navbar container-fluid navbar-expand-xl navbar-dark bg-dark">
         <a href="#" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="31"
@@ -40,17 +55,12 @@
               d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
           </svg>GDS<b>DryWall</b>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
-          <form class="navbar-form form-inline">
-            <div class="input-group search-box">
-              <input type="text" id="search" class="form-control" placeholder="Buscar..." />
-              <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
-            </div>
-          </form>
+          
           <div class="navbar-nav ml-auto">
             <a href="#" class="nav-item nav-link active"><i class="bi bi-house"></i></i><span>Home</span></a>
             <a href="#categoria" class="nav-item nav-link"><i class="bi bi-list-ol"></i></i><span>Categoria</span></a>
@@ -85,6 +95,7 @@
         <br>DryWall
         <br>Steel Frame<br>
         <img class="col-4" src="/Imagens/LOGO/[LOGO][GDS].png">
+        
       </div>
     </div>
     <!-- <a name="top"></a>
@@ -358,7 +369,7 @@
       <hr />
     </div>
         <div class="input-group mb-3">
-          <input type="text" class="form-control input-text" placeholder="Buscar produto...."
+          <input type="text" id="searchText" onkeyup="myFunction()" class="form-control input-text" placeholder="Buscar produto...."
             aria-label="Recipient's username" aria-describedby="basic-addon2" />
           <div class="input-group-append">
             <button class="btn btn-outline-primary btn-lg" type="button">
@@ -368,317 +379,196 @@
         </div>
       </div>
     </div>
+    
     <!-- BUCAR-->
     <br />
-    <main class="flex-fill container">
+    <main class="flex-fill container searchables">
       <div class="row row-cols-2 row-cols-md-4 g-1 justify-content-center">
-        <div class="col">
+        <div class="col p-2">
           <div class="card ">
             <a href="/ecommerce.html">
               <img src="/Imagens/STEEL FRAME/[PLACA][CIMENTICIA].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Placa Cimenticia</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12" type="button" data-toggle="collapse"
                 data-target="#" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
+            </a>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="Imagens/DRYWALL/[MASSA] [DRYWALL].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Massa Fina Drywall</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" data-toggle="collapse"
                 data-target="#collapseExample02" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample02">
-              <div class="card card-body">
-                <h5 class="card-title">Holdflex 15 Kg</h5>
-                <p class="card-text truncar-3l">
-                  Consumo: de 500 a 600g por m2 <br />
-                  Produto pronto para o uso Intervalo entre demãos: 12 horas.
-                  Secagem completa: 24 horas.
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="Imagens/DRYWALL/[LAN DE VIDRO] [001].jpg" class="img-fluid" />
             </a>
-            <div class="card-header">Lã de Vidro Isover</div>
-            <p>
+            <div class="card-header">Lã de Vidro</div>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" data-toggle="collapse"
                 data-target="#collapseExample03" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample03">
-              <div class="card card-body">
-                <h5 class="card-title">1,20m x 12,5m x 50mm</h5>
-                <p class="card-text truncar-3l">
-                  MARCA: Isover<br />
-                  MODELO: Wallfelt COR: Amarelo MATERIAL: Lã de vidro aglomerado
-                  com resina vegetal
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="Imagens/DRYWALL/[GESSO COLA] [DRYALL].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Gesso Cola</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" data-toggle="collapse"
                 data-target="#collapseExample04" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample04">
-              <div class="card card-body">
-                <h5 class="card-title">Gesso cola Gypress</h5>
-                <p class="card-text truncar-3l">
-                  Pacote de 5kg de Gesso cola Gypress, pode ser aplicado em
-                  superfícies de concreto, bloco cerâmico e reboco.
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
+          
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="Imagens/DRYWALL/[PLACOPLAST] [DRYWALL].jpg" class="img-fluid" />
             </a>
-            <div class="card-header">Placoplast Basecoat</div>
-            <p>
+            <div class="card-header">Placoplast</div>
+            <a  href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" data-toggle="collapse"
                 data-target="#collapseExample05" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample05">
-              <div class="card card-body">
-                <h5 class="card-title">Glasroc GRX (25KG/h5>
-                  <p class="card-text truncar-3l">
-                    Peso 25 kg<br />
-                    Áreas de aplicação:<br />
-                    Áreas externas Marca Placo
-                  </p>
-                  <div class="card-footer">
-                    <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                      Ir para Loja
-                    </a>
-                  </div>
-              </div>
-            </div>
+            </a>
+            
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="/Imagens/PERFIL/[PERFIL][DRYWALL][MONTATE].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Montante</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" 
                 data-target="#collapseExample06" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample06">
-              <div class="card card-body">
-                <h5 class="card-title">MONTANTE</h5>
-                <p class="card-text truncar-3l">
-                  Fabricado em aço galvanizado. São produzidos conforme norma NBR
-                  15217/09. Inscritos no programa setorial da qualidade.
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
+            
           </div>
         </div>
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="/Imagens/GESSO/GESSO 3D [001].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Gesso 3D</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" 
                 data-target="#collapseExample07" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
+            </a>
             
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="/Imagens/PERFIL/[PERFIL][DRYWALL][EMENDA F-530].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Emenda F-530</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" 
                 data-target="#collapseExample08" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample08">
-              <div class="card card-body">
-                <h5 class="card-title">MONTANTE</h5>
-                <p class="card-text truncar-3l">
-                  Fabricado em aço galvanizado. São produzidos conforme norma NBR
-                  15217/09. Inscritos no programa setorial da qualidade.
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
+            
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="/Imagens/DRYWALL/[PLACA][TOP].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Placa TOP</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" 
                 data-target="#collapseExample09" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample09">
-              <div class="card card-body">
-                <h5 class="card-title">MONTANTE</h5>
-                <p class="card-text truncar-3l">
-                  Fabricado em aço galvanizado. São produzidos conforme norma NBR
-                  15217/09. Inscritos no programa setorial da qualidade.
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
+           
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="/Imagens/DRYWALL/[PLACA][RF].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Placa RF</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" 
                 data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample11">
-              <div class="card card-body">
-                <h5 class="card-title">MONTANTE</h5>
-                <p class="card-text truncar-3l">
-                  Fabricado em aço galvanizado. São produzidos conforme norma NBR
-                  15217/09. Inscritos no programa setorial da qualidade.
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
+            
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="/Imagens/DRYWALL/[PLACA][RU].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Placa RU</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" 
                 data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
+            </a>
             
           </div>
         </div>
 
-        <div class="col">
+        <div class="col p-2">
           <div class="card">
             <a href="/ecommerce.html">
               <img src="/Imagens/DRYWALL/[PLACA][ST].jpg" class="img-fluid" />
             </a>
             <div class="card-header">Placa ST</div>
-            <p>
+            <a href="/ecommerce.html">
               <button class="btn  btn-outline-primary col-12 " type="button" data-toggle="collapse"
                 data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">
                 Detalhes
               </button>
-            </p>
-            <div class="collapse" id="collapseExample10">
-              <div class="card card-body">
-                <h5 class="card-title">MONTANTE</h5>
-                <p class="card-text truncar-3l">
-                  Fabricado em aço galvanizado. São produzidos conforme norma NBR
-                  15217/09. Inscritos no programa setorial da qualidade.
-                </p>
-                <div class="card-footer">
-                  <a href="/ecommerce.html" class="btn btn-danger mt-2 d-block">
-                    Ir para Loja
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
+            
           </div>
         </div>
       </div>
@@ -818,7 +708,38 @@
     </section>
 
     <!-- ORFETAS -->
+    
     <br>
+    <div class="row" id="about">
+      <div class="col-sm-4 text-center box">
+          <!-- title -->
+          <div class="title my-3">
+              <h1 class="display-4 text-white">Trabalhe Conosco</h1>
+              <div class="title-underline"></div>
+              <p class="text-muted">Preencha o formulário abaixo para nos enviar seu currículo. Faça parte de nossa história! Junte-se a Nós!</p>
+              <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar Currículo</a>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Trabalhe conosco</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- end of title -->
+      </div>
+      <div class="col-sm-8 pic"></div>
+  </div>
     <!--Google map-->
     <div class="col-lg-12 p-5 container">
       <h1> <i class="bi bi-geo-fill" style="font-size:1em" aria-hidden="true"></i>Onde Estamos</h1>
@@ -874,11 +795,11 @@
           </p>
         </div>
 
-        <div class="col-md-6 col-lg-3">
-          <h5 class="fw-light">Links</h5>
+        <div  class="col-md-6 col-lg-3">
+          <h5  class="fw-light">Links</h5>
           <ul class="list-unstyled">
             <li class="my-3">
-              <a href="#" class="text-white text-decoration-none text-muted">
+              <a href="#header"  class="text-white text-decoration-none text-muted">
                 <i class="fas fa-chevron-right me-1"></i> Inicio
               </a>
             </li>
@@ -894,7 +815,7 @@
             </li>
             <li class="my-3">
               <a href="#" class="text-white text-decoration-none text-muted">
-                <i class="fas fa-chevron-right me-1"></i> About Us
+                <i class="fas fa-chevron-right me-1"></i> Trabalhe conosco!
               </a>
             </li>
           </ul>
@@ -962,7 +883,7 @@
       </div>
     </div>
   </footer>
-
+  <div id="wapp-button"></div>
     
   <script src="/Js/jquery-3.6.1.js"></script>
   <!-- isotope js -->
