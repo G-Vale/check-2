@@ -452,13 +452,30 @@ i:hover {
    width: 75%;
   }
 }
+/*nav 01
+#nav01{
+    background-color: #2d3142;
+}
+#about .exp{
+    height: 600px;
+    background: url("/Imagens/LOGO/HMCV4998.JPG") fixed no-repeat center;
+    background-size: cover;
+    border-bottom: 600px solid transparent;
+    border-left: 100px solid #2d3142;
+}
 
+#about .box02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+ */
 /* about */
 #about{
     background-color: #2d3142;
 }
 
-#about .pic{
+#about .pic {
     height: 600px;
     background: url("/Imagens/LOGO/HMCV4998.JPG") fixed no-repeat center;
     background-size: cover;
@@ -471,6 +488,20 @@ i:hover {
     flex-direction: column;
     justify-content: center; 
 }
-
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #about .pic {
+        background: url("/Imagens/LOGO/HMCV4998.JPG") fixed center ;
+        border-left:100px solid #2d3142;
+        border-right:100px solid #2d3142;
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+        height: 100%;
+        /*Additional code (don't bother adding this):*/
+        text-align: center;
+        color: white;
+    }   
+}
 
 
