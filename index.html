@@ -55,16 +55,40 @@
           <div class="col-2 align-self-center">
             <a href="#" class="navbar-brand"><img class="img-fluid" src="/Imagens/LOGO/logaoo.jpg"></a>
           </div>
-          <div class="col align-self-center">
+          <div class="col-4 align-self-center">
             <h1>GDS<b>Drywall</b></h1>
             <form class="d-flex ">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>  
-          <div class="col align-self-center">
-            
-          </div>   
+          <div class="col-md-4 col-lg-3 ">
+            <h5 class="fw-light mb-3">Siga-nos</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a href="https://www.facebook.com/GDSGESSOEDRYWALL/" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCuSn2nzCHtLE5O_3Byu0XdQ" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/gdsgessoedrywall/" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send/?phone=5541992907250&text&app_absent=0" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>  
         </div>
         <!--<button type="button" class="navbar-toggler button-nav" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavba" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -98,14 +122,14 @@
           </div>
       </nav>
     </header>
-    <div class="container-fluid">
-          <div class="row">
+    <div class="container-fluid ">
+          <div class="row navbar">
               <div id="bc1" class="btn-group btn-breadcrumb text-white bg-dark">               
-                  <a href="#" class="btn btn-default text-white bg-dark"><div><i class="bi bi-list-ol"></i> CATEGORIAS</div></a>
-                  <a href="#" class="btn btn-default text-white bg-dark" ><div><i class="bi bi-shop"></i> LOJAS</div></a>
-                  <a href="#" class="btn btn-default text-white bg-dark"><div><i class="bi bi-collection"></i> PRODUTOS</div></a>
+                  <a href="#categoria" class="btn btn-default text-white bg-dark"><div><i class="bi bi-list-ol"></i> CATEGORIAS</div></a>
+                  <a href="#lojas" class="btn btn-default text-white bg-dark" ><div><i class="bi bi-shop"></i> LOJAS</div></a>
+                  <a href="#produtos" class="btn btn-default text-white bg-dark"><div><i class="bi bi-collection"></i> PRODUTOS</div></a>
                   
-                  <a href="#" class="btn btn-default text-white bg-dark"><div><i class="bi bi-telephone-forward"></i> CONTATO</div></a>
+                  <a href="https://api.whatsapp.com/send/?phone=5541992907250&text&app_absent=0" class="btn btn-default text-white bg-dark"><div><i class="bi bi-telephone-forward"></i> CONTATO</div></a>
               </div>
 </div>
 </div>
@@ -760,7 +784,64 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      ...
+                      <div class='container'>
+                        <h1>Form Validation</h1>
+                      <form class="form-horizontal" novalidate="">
+                        <div class="control-group">
+                          <label class="control-label" for="email">Email address</label>
+                          <div class="controls">
+                            <input type="email" name="email" id="email" required="">
+                            <p class="help-block">Email address we can contact you on</p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label">Type a number</label>
+                          <div class="controls">
+                            <input type="number" required='' min='10' max='15' />
+                            <p class="help-block"></p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="emailAgain">Email again</label>
+                          <div class="controls">
+                            <input type="email" data-validation-matches-match="email" data-validation-matches-message="Must match email address entered above" id="emailAgain" name="emailAgain">
+                            <p class="help-block">And again, to check for spelling miskates</p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="terms-and-conditions">Legal</label>
+                          <div class="controls">
+                            <label class="checkbox">
+                              <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required="" data-validation-required-message="You must agree to the terms and conditions">
+                              I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                            <p class="help-block"></p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label">Quality Control</label>
+                          <div class="controls">
+                            <label class="checkbox">
+                              <input type="checkbox" name="qualityControl[]" value="fast" data-validation-minchecked-minchecked="2" data-validation-minchecked-message="Choose two" data-validation-maxchecked-maxchecked="2" data-validation-maxchecked-message="You can't have it all ways">
+                              Fast
+                            </label>
+                            <label class="checkbox">
+                              <input type="checkbox" name="qualityControl[]" value="cheap">
+                              Cheap
+                            </label>
+                            <label class="checkbox">
+                              <input type="checkbox" name="qualityControl[]" value="good">
+                              Good
+                            </label>
+                            <p class="help-block"></p>
+                          </div>
+                        </div>
+                        <div class="form-actions">
+                          <button type="submit" class="btn btn-primary">Test Validation <i class="icon-ok icon-white"></i></button><br>
+                          (go ahead, nothing is sent anywhere)
+                        </div>
+                        </form>
+                      </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -775,7 +856,7 @@
       <div class="col-sm-8 pic"></div>
   </div>
     <!--Google map-->
-    <div class="col-lg-12 p-5 container">
+    <div class="col-lg-12 p-5 container" id="lojas">
       <h1> <i class="bi bi-geo-fill" style="font-size:1em" aria-hidden="true"></i>Onde Estamos</h1>
       <hr />
     </div>
