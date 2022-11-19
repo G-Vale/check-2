@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
   <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GDS Drywall</title>
@@ -13,7 +14,8 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/Principal.css" >
-    <link href="/Js/index.js">      
+    <link href="/Js/index.js">
+    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -27,7 +29,7 @@
   </head>
 
 <body>
-  <!--NAV PRINCIPAL-->
+  <!--NAV PRINCIPAL
   <div  class="container-fluid  d-flex align-items-center">
     <div class="input-group search-box  ">
       <img class="col-2" src="/Imagens/LOGO/[LOGO][GDS].png">
@@ -46,22 +48,31 @@
     <a href="https://www.youtube.com/channel/UCuSn2nzCHtLE5O_3Byu0XdQ" target="_blank" class="text-white text-decoration-none text-muted fs-4 me-4">
       <i class="bi bi-youtube"></i>
     </a>
-  </div>
+  </div>-->
     <header id="header" class="header d-flex align-items-center">
-      <nav class="navbar container-fluid navbar-expand-xl navbar-dark bg-dark">
-        <a href="#" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="31"
-            fill="currentColor" class="bi bi-bank" viewBox="0 3 18 16">
-            <path
-              d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
-          </svg>GDS<b>DryWall</b>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-target="#navbarCollapse">
+      <div class="container-fluid">
+        <div class="row row-cols-auto g-0 " id="xxt">
+          <div class="col-2 align-self-center">
+            <a href="#" class="navbar-brand"><img class="img-fluid" src="/Imagens/LOGO/logaoo.jpg"></a>
+          </div>
+          <div class="col align-self-center">
+            <h1>GDS<b>Drywall</b></h1>
+            <form class="d-flex ">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>  
+          <div class="col align-self-center">
+            
+          </div>   
+        </div>
+        <!--<button type="button" class="navbar-toggler button-nav" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavba" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Collection of nav links, forms, and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
+         Collection of nav links, forms, and other content for toggling 
+        <div id="offcanvasNavbar" class="offcanvas offcanvas-end justify-content-between" aria-labelledby="offcanvasNavbarLabel">
           
-          <div class="navbar-nav ml-auto">
+          <div class="navbar-nav offcanvas-body ml-auto">
             <a href="#" class="nav-item nav-link active"><i class="bi bi-house"></i></i><span>Home</span></a>
             <a href="#categoria" class="nav-item nav-link"><i class="bi bi-list-ol"></i></i><span>Categoria</span></a>
             <a href="#ofertas" class="nav-item nav-link"><i class="bi bi-basket"></i></i><span>Ofertas</span></a>
@@ -71,7 +82,7 @@
                 class="bi bi-people"></i></i><span>Sobre Nós</span></a><a href="/ecommerce.html" class="nav-item nav-link"><i
                 class="bi bi-shop"></i><span>Lojas</span></a>
             <a href="https://api.whatsapp.com/send/?phone=5541992907250&text&app_absent=0" target="_blank"
-              class="nav-item nav-link"><i class="bi bi-telephone-forward"></i><span>Contatos</span></a>
+              class="nav-item nav-link"><i class="bi bi-telephone-forward"></i><span>Contatos</span></a>-->
           <!-- <div class="nav-item dropdown">
               <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img
                   src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar" alt="Avatar"> Perfil
@@ -87,12 +98,35 @@
           </div>
       </nav>
     </header>
+    <div class="container-fluid">
+          <div class="row">
+              <div id="bc1" class="btn-group btn-breadcrumb text-white bg-dark">               
+                  <a href="#" class="btn btn-default text-white bg-dark"><div><i class="bi bi-list-ol"></i> CATEGORIAS</div></a>
+                  <a href="#" class="btn btn-default text-white bg-dark" ><div><i class="bi bi-shop"></i> LOJAS</div></a>
+                  <a href="#" class="btn btn-default text-white bg-dark"><div><i class="bi bi-collection"></i> PRODUTOS</div></a>
+                  
+                  <a href="#" class="btn btn-default text-white bg-dark"><div><i class="bi bi-telephone-forward"></i> CONTATO</div></a>
+              </div>
+</div>
+</div>
+    <!--<div class="container-fluid">
+      <div class="row gx-5 justify-content-between">
+        
+            <a href="#categoria" class="col-2"><i class="bi bi-list-ol"></i></i><span>Categoria</span></a>
+            <a href="#ofertas" class="col-2"><i class="bi bi-basket"></i></i><span>Ofertas</span></a>
+            <a href="#produtos" class="col-2"><i
+                class="bi bi-col-lection"></i></i><span>Produtos</span></a>
+            <a href="/ecommerce.html" class="col-2"><i
+                class="bi bi-shop"></i><span>Lojas</span></a>
+            
+      </div>
+    </div>-->
     <a name="top"></a>
     <div class="top wide text-center">
       <div class="col-xs-2 line"></div>
       <img class="col-4" src="/Imagens/LOGO/[LOGO][SANDRINHO].png">
       <div class="col-mb-8 logo">Gesso
-        <br>DryWall
+        <br>Drywall
         <br>Steel Frame<br>
         <img class="col-4" src="/Imagens/LOGO/[LOGO][GDS].png">
         
@@ -791,7 +825,7 @@
         <div class="col-md-6 col-lg-3">
           <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Sobre nós</a>
           <p class="text-white text-muted mt-3">
-            GDS DryWAll Comércio S/A. - CEP 82840-020. Sede administrativa: R. José Fernandes Maldonado - nº 100 – Curitiba.
+            GDS Drywall. - CEP 82840-020. Sede administrativa: R. José Fernandes Maldonado - nº 100 – Curitiba.
           </p>
         </div>
 
