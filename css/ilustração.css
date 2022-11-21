@@ -32,6 +32,12 @@ ul li {
 .nav li {
     display: inline;
 }
+
+.card{
+    max-width:500px;
+  }
+
+  
 .nav {
     margin-top: -660px;
     height: 90px;

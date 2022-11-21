@@ -76,7 +76,7 @@ body {
 }
 
 header {
-  height: 8rem;
+  height: 7rem;
 }
 .search-box {
     position: relative;
@@ -191,7 +191,7 @@ i:hover {
 }
 
 .top{
-  background: url(/Imagens/LOGO/6968d434-ad81-44eb-97bf-291428958634.jpg) no-repeat bottom center scroll;
+  background: url(/Imagens/ANUNCIOS/[capa][002].jpeg) no-repeat bottom center scroll;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
