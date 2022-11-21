@@ -75,6 +75,9 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
+header {
+  height: 8rem;
+}
 .search-box {
     position: relative;
 }
