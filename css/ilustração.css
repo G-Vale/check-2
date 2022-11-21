@@ -12,6 +12,20 @@ ul li {
     margin: 0 20px;
 }
 
+body{
+    font-family: var(--sm-font);
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
+
+
 .rounded {
     padding-top: 100px;
 }
