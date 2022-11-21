@@ -17,6 +17,12 @@ body{
 	background-repeat: no-repeat;
 	height: 540px;
 }
+
+@media (max-width: 768px) {
+	#heading02{
+		height: 255px;
+	}
+}
 /* countdown number */
 
 .countdownHolder{
@@ -131,7 +137,9 @@ a:hover{
 }
 
 
-
+p {
+	color: floralwhite
+}
 /*----------------------------
 	Main Section
 -----------------------------*/

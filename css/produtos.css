@@ -9,6 +9,9 @@ body{
     font-family: var(--sm-font);
 }
 
+
+
+
 /* button */
 .bg-primary{
     background-color: var(--pink)!important;
@@ -30,6 +33,10 @@ body{
 .button-nav {
     border: #000 solid 2px;
 }
+
+.page-section {
+    padding: 8rem 0;
+  }
 
 /* text color */
 .text-primary{
