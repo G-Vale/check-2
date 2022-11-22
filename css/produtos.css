@@ -9,6 +9,11 @@ body{
     font-family: var(--sm-font);
 }
 
+.body-inner {
+    position: relative;
+    overflow: hidden;
+  }
+
 /* Bootstrap */
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
@@ -260,13 +265,13 @@ ul.navbar-nav > li > a {
 }
 ul.navbar-nav > li:hover > a,
 ul.navbar-nav > li.active > a {
-  color: #ffb600 !important;
+  color: #8ab3cf !important;
 }
 
 /*-- Logo --*/
 .logo img {
   width: auto;
-  height: 35px;
+  height: 5em;
 }
 
 .header-two .logo img {
@@ -825,7 +830,7 @@ ul.navbar-nav > li > a {
 
 /* offers */
 #offers{
-    background: url(/Imagens/LOGO/[LOGO][SANDRINHO].png) center/cover no-repeat;
+    background: url(/Imagens/ANUNCIOS/[capa][002].jpeg) center/cover no-repeat;
 }
 #offers .row{
     min-height: 60vh;
