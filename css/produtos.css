@@ -63,11 +63,11 @@ a[href^=tel] {
 
 .btn-white.btn-primary {
   background: #fff;
-  color: #ffb600;
+  color: #8ab3cf;
 }
 
 .btn-primary {
-  background: #ffb600;
+  background: #bdd1de;
 }
 
 .btn-dark {
@@ -195,7 +195,7 @@ ul.top-info li p.info-text {
 }
 
 .top-bar-border ul.top-info li i {
-  color: #ffb600;
+  color: #4180ab;
 }
 
 /* Header area
@@ -479,7 +479,7 @@ ul.navbar-nav > li > a i {
   }
   .header-two ul.navbar-nav > li.active > a i,
 .header-two ul.navbar-nav > li > a.active i {
-    color: #ffb600;
+    color: #4180ab;
   }
 }
 ul.navbar-nav > li > a:after,
@@ -539,7 +539,7 @@ ul.navbar-nav > li > a {
   min-width: 200px;
   border-radius: 0;
   border: 0;
-  border-top: 2px solid #ffb600;
+  border-top: 2px solid #4180ab;
   padding: 0 20px;
   margin: 0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -761,21 +761,6 @@ ul.navbar-nav > li > a {
 }
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
-}
-
-/* header */
-#header{
-    background: url(/Imagens/ANUNCIOS/[ANUNCIO]\ [BLACK\ FRIDAY]\ [002].jpg) top/cover no-repeat;
-}
-.carousel-inner h1{
-    font-size: 60px;
-    font-family: var(--lg-font);
-}
-.carousel-item .btn{
-    border-color: #fff!important;
-}
-.carousel-item .btn:hover{
-    border-color: var(--pink)!important;
 }
 
 /* title */
