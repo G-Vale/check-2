@@ -3,7 +3,7 @@ body{
 }
 #heading{
 	background:#141414;
-	background-image: url(/Imagens/ANUNCIOS/[muro\ preto].jpeg);
+	background-image: url(https://img.freepik.com/vetores-gratis/parede-de-tijolos-em-construcao_1176-83.jpg?w=740&t=st=1669377660~exp=1669378260~hmac=f1c0afe9594fc0630d3ca4cde1e44ef22e1593f5836101839f7641b9d4e3c147);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -303,8 +303,6 @@ p {
 h1{
 	color: #fff;
 }  
-
-/* TIMER CRONOMETRO 
 
 ul#example {
   list-style: none;
