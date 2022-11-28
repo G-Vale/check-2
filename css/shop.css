@@ -2539,3 +2539,8 @@ label {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+/* PAGINAÇÃO */
+.pagination {
+  background-color: red;
+}
