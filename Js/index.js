@@ -52,7 +52,7 @@ searchBar();
 
 $('document').ready(function(){
   
-  var wappNumber = 5541992907250;
+  var wappNumber = 5541992619201;
   var wappMessage = 'Olá! Tudo bem? quero falar com um atendente';
   var wappBackground = '#00e676';
   var wappIconColor = '#fff';
