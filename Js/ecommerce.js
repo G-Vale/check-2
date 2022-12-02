@@ -190,3 +190,7 @@ return false;
       }
   });
 })(jQuery);
+
+$(document).ready(function() {
+      $('#rotate').rotaterator({fadeSpeed:1000, pauseSpeed:1000});
+});

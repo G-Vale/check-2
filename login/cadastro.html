@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login e Senha</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css/bootstrap-5.0.2-dist/css/bootstrap.min.css -->
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/js/bootstrap.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- custom css css/main.css-->
+    <link rel="stylesheet" href="/css/produtos.css" />
+</head>
+
+<body>
+
+    <section id="forms">
+        <div class="row">
+            <aside class="col-sm-4">
+                <div id="code_login_1">
+                    <div class="card">
+                        <article class="card-body">
+                            <header class="card-header">
+                                <h4 class="card-title mt-2">Entrar</h4>
+                            </header>
+                            <br>
+                            <form>
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <label>Email</label>
+
+                                    <input name="" class="form-control" placeholder="Email" type="email">
+                                </div> <!-- form-group// -->
+                                <br>
+                                <div class="form-group">
+                                    <i class="fa fa-lock"></i>
+                                    <label>Senha</label>
+
+                                    <input class="form-control" placeholder="******" type="password">
+                                    <a class="float-right" href="#">Recuperar senha</a>
+
+                                </div> <!-- form-group// -->
+                                <br>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label> <input type="checkbox"> Salvar senha </label>
+                                    </div> <!-- checkbox .// -->
+                                </div> <!-- form-group// -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Entrar </button>
+                                </div> <!-- form-group// -->
+                            </form>
+                        </article>
+                    </div> <!-- card.// -->
+                </div> <!-- code-wrap.// -->
+            </aside> <!-- col.// -->
+
+        </div> <!-- row.// -->
+
+
+        <div class="row">
+            <aside class="col-sm-6">
+
+                <div id="code_register_1">
+                    <div class="card">
+                        <header class="card-header">
+                            <h4 class="card-title mt-2">Criar Conta</h4>
+                        </header>
+                        <article class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col form-group">
+                                        <i class="fa fa-user"></i>
+                                        <label>Primeiro nome</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div> <!-- form-group end.// -->
+                                    <br>
+                                    <div class="col form-group">
+                                        <i class="fa fa-user"></i>
+                                        <label>Segundo nome</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div> <!-- form-group end.// -->
+                                    <br>
+                                </div> <!-- form-row end.// -->
+                                <div class="form-group">
+                                    <i class="fa fa-envelope"></i>
+                                    <label>Email </label>
+                                    <input type="email" class="form-control" placeholder="">
+                                </div> <!-- form-group end.// -->
+                                <br>
+                                <div class="form-group">
+                                    <i class="fa fa-phone"></i>
+                                    <label>Telefone </label>
+                                    <input name="" class="form-control" placeholder="(99) 99999-9999" type="text">
+                                </div> <!-- form-group end.// -->
+                                <br>
+                                <div class="form-group">
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" value="option1">
+                                        <span class="form-check-label"> Male </span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" value="option2">
+                                        <span class="form-check-label"> Female</span>
+                                    </label>
+                                </div> <!-- form-group end.// -->
+                                <br>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <i class="fa fa-building"></i>
+                                        <label>Estado</label>
+                                        <input type="text" class="form-control">
+                                    </div> <!-- form-group end.// -->
+                                    <div class="form-group col-md-6">
+                                        <i class="fa fa-building"></i>
+                                        <label>Cidade</label>
+                                        <select id="inputState" class="form-control">
+                                            <option> Choose...</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Russia</option>
+                                            <option selected>United States</option>
+                                            <option>India</option>
+                                            <option>Afganistan</option>
+                                        </select>
+                                    </div> <!-- form-group end.// -->
+                                </div> <!-- form-row.// -->
+                                <br>
+                                <div class="form-group">
+                                    <i class="fa fa-lock"></i>
+                                    <label>Senha</label>
+                                    <input class="form-control" type="password">
+                                </div> <!-- form-group end.// -->
+                                <br>
+                                <div class="form-group">
+                                    <i class="fa fa-lock"></i>
+                                    <label>Confirmar Senha</label>
+                                    <input class="form-control" type="password">
+                                </div> <!-- form-group end.// -->
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Registra-se </button>
+                                </div> <!-- form-group// -->
+                                <hr>
+                                <small class="text-muted">Ao clicar no botão 'Registra-se', você confirma que aceita
+                                    <br> Termos de uso e Política de Privacidade</small>
+                            </form>
+                        </article> <!-- card-body end .// -->
+                        <div class="border-top card-body text-center">Já tem uma conta? <a href="">Entrar</a></div>
+                    </div> <!-- card.// -->
+
+                </div> <!-- code-wrap.// -->
+            </aside> <!-- col.// -->
+
+        </div> <!-- row.// -->
+
+    </section>
+
+    <section id="order">
+
+        <div id="code_cart">
+            <div class="card">
+                <table class="table table-hover shopping-cart-wrap">
+                    <thead class="text-muted">
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col" width="120">Quantidade</th>
+                            <th scope="col" width="120">Preço</th>
+                            <th scope="col" width="200" class="text-right">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <figure class="media">
+                                    <img src="/Imagens/PARAFUSOS/[UTENCILIO][BUCHA NYLON N° 6].jpg" class="w-25" />
+                                    </div>                                   
+                                </figure>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="price-wrap">
+                                    <var class="price">USD 145</var>
+                                    <small class="text-muted">(USD5 each)</small>
+                                </div> <!-- price-wrap .// -->
+                            </td>
+                            <td class="text-right">
+                                <a title="Save to Wishlist" href="" class="btn btn-outline-success"
+                                    data-toggle="tooltip"> <i class="fa fa-heart"></i></a>
+                                <a href="" class="btn btn-outline-danger"> &times Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <figure class="media">
+                                    <img src="/Imagens/PARAFUSOS/[UTENCILIO][BUCHA NYLON N° 6].jpg" class="w-25" />
+                                    </div>
+                                    
+                                </figure>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="price-wrap">
+                                    <var class="price">USD 35</var>
+                                    <small class="text-muted">(USD10 each)</small>
+                                </div> <!-- price-wrap .// -->
+                            </td>
+                            <td class="text-right">
+                                <a title="Save to Wishlist" href="" class="btn btn-outline-success"
+                                    data-toggle="tooltip"> <i class="fa fa-heart"></i></a>
+                                <a href="" class="btn btn-outline-danger btn-round"> &times Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <figure class="media">
+                                    <img src="/Imagens/PARAFUSOS/[UTENCILIO][BUCHA NYLON N° 6].jpg" class="w-25" />
+                                    </div>
+                                    
+                                </figure>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="price-wrap">
+                                    <var class="price">USD 45</var>
+                                    <small class="text-muted">(USD15 each)</small>
+                                </div> <!-- price-wrap .// -->
+                            </td>
+                            <td class="text-right">
+                                <a title="Save to Wishlist" href="" class="btn btn-outline-success"
+                                    data-toggle="tooltip"> <i class="fa fa-heart"></i></a>
+                                <a href="" class="btn btn-outline-danger btn-round"> &times Remove</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- card.// -->
+        </div> <!-- code-wrap.// -->
+    </section>
+
+
+
+
+
+
+
+    <!-- end of footer -->
+    <div id="wapp-button"></div>
+    <!-- jquery "js/jquery-3.6.0.js"-->
+    <script src="/Js/jquery-3.6.1.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js "bootstrap-5.0.2-dist/js/bootstrap.min.js"-->
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js js/script.js-->
+    <script src="/Js/ecommerce.js"></script>
+
+
+</body>
+
+</html>
