@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ecommerce</title>
+  <title>Ecommerce</title>
   <!-- fontawesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  
+  <!-- ENDEREÇOS DEPOSITO/AFILIAL/MATRIX -->
   <div class="body-inner">
     <div id="top-bar" class="top-bar">
       <div class="container">
@@ -57,8 +57,10 @@
       <!--/ Container end -->
     </div>
   </div>
-<!-- Header start -->
-<header id="header" class="header-one">
+  <!-- ENDEREÇOS DEPOSITO/AFILIAL/MATRIX -->
+
+  <!-- NAV/BAR -->
+  <header id="header" class="header-one">
   <div class="bg-white">
     <div class="container">
       <div class="logo-area">
@@ -97,12 +99,113 @@
                     <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
                       <ul class="list-unstyled">
                         <li class="d-flex">
-                          <a title="Facebook" href="#">
+                          <a title="Facebook" href="#" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <span class="social-icon"><i class="bi bi-person-circle" style="font-size: 2rem;"></i>Minha Conta</span>
                           </a>
-                          <a title="whatsapp" href="#">
+                        <!-- Modal -->
+                              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header">                                    
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">                                
+                                      <section class="container row row-cols-1 row-cols-md-3 p-2 justify-content-center" id="forms">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div id="code_login_1">
+                                                    <div class="card">
+                                                        <article class="card-body">
+                                                            <header class="card-header">
+                                                                <h4 class="card-title mt-2">Faça login</h4>
+                                                            </header>
+                                                            <br>
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <i class="fa fa-user"></i>
+                                                                    <label>Email</label>
+                                
+                                                                    <input name="" class="form-control" placeholder="Email" type="email">
+                                                                </div> <!-- form-group// -->
+                                                                <br>
+                                                                <div class="form-group">
+                                                                    <i class="fa fa-lock"></i>
+                                                                    <label>Senha</label>
+                                
+                                                                    <input class="form-control" placeholder="******" type="password">
+                                                                    <a class="float-right" href="#">Recuperar senha</a>
+                                
+                                                                </div> <!-- form-group// -->
+                                                                <br>
+                                                                <div class="form-group">
+                                                                    <div class="checkbox">
+                                                                        <label> <input type="checkbox"> Salvar senha </label>
+                                                                    </div> <!-- checkbox .// -->
+                                                                </div> <!-- form-group// -->
+                                                                <div class="form-group">
+                                                                    <button type="submit" class="btn btn-primary btn-block"> Entrar </button>
+                                                                </div> <!-- form-group// -->
+                                                            </form>
+                                                        </article>
+                                                    </div> <!-- card.// -->
+                                                </div> <!-- code-wrap.// -->
+                                            </div> <!-- col.// -->
+                                        </div> <!-- row.// -->
+                                        <div class="row justify-content-center text-center">
+                                            <div class="col">
+                                                <div id="code_login_1">
+                                                    <div class="card">
+                                                        <article class="card-body">
+                                                            <header class="card-header">
+                                                                <h4 class="card-title mt-2">Faça login com suas redes sociais</h4>
+                                                            </header>
+                                                            <br>
+                                                            <form class="">
+                                                                <p>
+                                                                    <a href="" class="btn btn-block btn-twitter bg-white text-dark"> <i class="bi bi-apple"></i> &nbsp; Entrar com a Apple</a>
+                                                                    <hr>
+                                                                    <a href="" class="btn btn-block btn-facebook"> <i class="bi bi-google"></i></i> &nbsp; Entrar com o Google</a>
+                                                                    <hr>
+                                                                    <a href="" class="btn btn-block btn-facebook "> <i class="fab fa-facebook-f"></i> &nbsp; Entrar com o facebook</a>
+                                                                </p>
+                                                                <hr> <!-- form-group// -->                                                           
+                                                            </form>
+                                                        </article>
+                                                    </div>
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </section>                                                               
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn">Criar Conta</button>
+                                      <button type="button" class="btn"  data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                          <a title="whatsapp" href="#" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop02">
                             <span class="social-icon"><i class="bi bi-cart3" style="font-size: 2rem;"></i>Meu Carrinho</span>
-                          </a>                          
+                          </a>
+                          <!-- Modal -->
+                              <div class="modal fade" id="staticBackdrop02" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      ...123
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Understood</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </li>
                       </ul>
                     </div>
@@ -242,8 +345,10 @@
     <!--/ Container end -->
   </div>
   <!--/ Navigation end -->
-</header>
-  <!-- end of header -->
+  </header>
+  <!-- NAV/BAR -->
+
+  <!-- BEM-VINDO -->
   <header class="masthead">
     <div class="container">
         <div class="masthead-subheading"><mark>Bem-vindo ao nosso Ecommerce!</mark></div>
@@ -251,7 +356,9 @@
         <a class="btn btn-primary btn-xl text-uppercase" href="#services">Contato direto</a>
     </div>
   </header>
-  
+  <!-- BEM-VINDO -->
+
+  <!-- INICIO CATEGORIA -->
   <section class="content-section"  id="portfolio">
     <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
@@ -316,12 +423,9 @@
           </div>
         </div>
     </div>
-</section>
-
- 
-
+  </section>
+  <!-- INICIO CATEGORIA -->
 <br>
-
   <!-- DRYWALL SECTION -->
   <section id="collection" class="py-5">
     <div class="container-fluid" id="drywall">
@@ -15517,7 +15621,7 @@
         <div class="collection-list mt-4 row gx-0 gy-3">
           <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
             <div class="collection-img position-relative">
-              <img src="/Imagens/GESSO/GESSO 3D [001].jpg" class="w-100" />
+              <img src="/imagens/GESSO/GESSO 3D [001].jpg" class="w-100" />
               <span
                 class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
             </div>
@@ -15530,7 +15634,116 @@
                 <span class="text-primary"><i class="fas fa-star"></i></span>
               </div>
               <p class="text-capitalize my-1">Placa 3D</p>
-              <span class="fw-bold">Sob Encomenda</span>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#martelo">
+                Detalhes
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="martelo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Detalhes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container mt-5 mb-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="images p-3">
+                                  <div class="text-center p-4">
+                                    <img id="main-image" src="/imagens/GESSO/GESSO 3D [001].jpg" width="250" />
+                                  </div>
+                                  <div class="thumbnail text-center">
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [001].jpg"
+                                      width="70" />
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [001].jpg"
+                                      width="70" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="product p-4">
+                                  <div class="mt-4 mb-3">
+                                    <h5 class="text-uppercase">Placa 3D</h5>
+                                    <span class="text-uppercase text-muted brand">Vonder®</span>
+                                  </div>
+                                  <p class="about">
+                                    Os Painéis decorativos 3D dão vida às suas paredes ou teto com designs geométricos modernos e contemporâneos. Dão uma dimensão extra e complementam qualquer ambiente residencial ou comercial, como sala de estar, quarto, cozinha, fundo da tv, paredes e teto na decoração da casa
+                                  </p>
+                                  
+                                  <div class="col-md-4 quantity">
+                                    <label for="quantity ">Quantidade:</label>
+                                    <input id="quantity" type="number" value="1" class="form-control quantity-input" />
+                                  </div>
+                                  <div class="row pt-3">
+                                    <div class="col-md-12 pt-0">
+                                      <ul class="nav nav-tabs">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse1"
+                                          role="button" aria-expanded="false" aria-controls="multiCollapse1">Ficha
+                                          Tecnica</a>
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse2"
+                                          role="button" aria-expanded="false"
+                                          aria-controls="multiCollapse2">Detalhamento</a>
+                                        <div class="row">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse1">
+                                              <div class="card card-body">
+                                                Tamanho: 50x50
+                                                <br />
+                                                Espessura: 0,45 mm<br />
+                                                Cor: Branco Natural (Pintáveis)<br />
+                                                Altura do relevo: até 20mm <br />
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row w-100">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse2">
+                                              <div class="card card-body">
+                                                <ul class="list-group w-100">
+                                                  <li class="list-group-item">
+                                                    <p>
+                                                      <strong>Descrição</strong>
+                                                    </p>
+                                                    Padrões, fotos e desenhos são apenas para fins ilustrativos. A produção final pode variar. Paredes com teor de umidade não são adequada para fixar os Painéis decorativos 3D.
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="cart mt-4 align-items-center">
+                                    <button class="btn btn-danger text-uppercase mr-2 px-4">
+                                      Adicionar ao carrinho
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Fechar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -15595,61 +15808,7 @@
                                     inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e
                                     indústrias em geral.
                                   </p>
-                                  <!--
-                                    <div class="sizes mt-5">
-                                      <h6 class="text-uppercase">
-                                        Comprimento
-                                      </h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>3000mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>6000mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>
-                                    <div>
-                                      <h6 class="text-uppercase">Dimenções</h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>48mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>70mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>90mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>-->
+                                  
                                   <div class="col-md-4 quantity">
                                     <label for="quantity ">Quantidade:</label>
                                     <input id="quantity" type="number" value="1" class="form-control quantity-input" />
@@ -15741,9 +15900,9 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 col-xl-3 p-2 ferramentas">
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
             <div class="collection-img position-relative">
-              <img src="/Imagens/FERRAMENTAS/[FERRAMENTA] [PARAFUSADEIRA].jpg" class="w-100" />
+              <img src="/imagens/GESSO/[PLAQUETA].jpg" class="w-100" />
               <span
                 class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
             </div>
@@ -15755,7 +15914,134 @@
                 <span class="text-primary"><i class="fas fa-star"></i></span>
                 <span class="text-primary"><i class="fas fa-star"></i></span>
               </div>
-              <p class="text-capitalize my-1">Parafusadeira</p>
+              <p class="text-capitalize my-1">Plaqueta</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#martelo5">
+                Detalhes
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="martelo5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Detalhes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container mt-5 mb-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="images p-3">
+                                  <div class="text-center p-4">
+                                    <img id="main-image" src="/imagens/GESSO/[PLAQUETA].jpg" width="250" />
+                                  </div>
+                                  <div class="thumbnail text-center">
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/[PLAQUETA].jpg"
+                                      width="70" />
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/[PLAQUETA].jpg"
+                                      width="70" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="product p-4">
+                                  <div class="mt-4 mb-3">
+                                    <h5 class="text-uppercase">Placa 3D</h5>
+                                    <span class="text-uppercase text-muted brand">Vonder®</span>
+                                  </div>
+                                  <p class="about">
+                                    Placa a base de gesso, aplicado praticamente em todos os tipos de construção, como casa e edifício. Tendo como diferencial facilidade de aplicação, com menor tempo de execução, tendo-se assim um melhor custo-benefício.
+                            
+                                  </p>
+                                  
+                                  <div class="col-md-4 quantity">
+                                    <label for="quantity ">Quantidade:</label>
+                                    <input id="quantity" type="number" value="1" class="form-control quantity-input" />
+                                  </div>
+                                  <div class="row pt-3">
+                                    <div class="col-md-12 pt-0">
+                                      <ul class="nav nav-tabs">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse1"
+                                          role="button" aria-expanded="false" aria-controls="multiCollapse1">Ficha
+                                          Tecnica</a>
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse2"
+                                          role="button" aria-expanded="false"
+                                          aria-controls="multiCollapse2">Detalhamento</a>
+                                        <div class="row">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse1">
+                                              <div class="card card-body">
+                                                Tamanho: 60x60
+                                                <br />
+                                                Peso: 6 Kg<br />
+                                                Material: Gesso<br />
+                                               <br />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row w-100">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse2">
+                                              <div class="card card-body">
+                                                <ul class="list-group w-100">
+                                                  <li class="list-group-item">
+                                                    <p>
+                                                      <strong>Descrição</strong>
+                                                    </p>
+                                                    Pré-moldados a base de gesso, são normalizadas na dimensão 60×60 cm² e utilizadas, especialmente, para rebaixamento de teto na construção civil.
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="cart mt-4 align-items-center">
+                                    <button class="btn btn-danger text-uppercase mr-2 px-4">
+                                      Adicionar ao carrinho
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Fechar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 ferramentas">
+            <div class="collection-img position-relative">
+              <img src="/Imagens/UTENCILIOS/[NIVEL TORPEDO 8 MAGNETICO STANLEY].jpg" class="w-100" />
+              <span
+                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+            </div>
+            <div class="text-center">
+              <div class="rating mt-3">
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+              </div>
+              <p class="text-capitalize my-1">Nivel de bolha torpedo</p>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#parafusadeira">
                 Detalhes
               </button>
@@ -15780,12 +16066,12 @@
                               <div class="col-md-6">
                                 <div class="images p-3">
                                   <div class="text-center p-4">
-                                    <img id="main-image" src="/Imagens/FERRAMENTAS/[FERRAMENTA] [PARAFUSADEIRA].jpg" width="250" />
+                                    <img id="main-image" src="/Imagens/UTENCILIOS/[NIVEL TORPEDO 8 MAGNETICO STANLEY].jpg" width="250" />
                                   </div>
                                   <div class="thumbnail text-center">
-                                    <img onclick="change_image(this)" src="/Imagens/FERRAMENTAS/[FERRAMENTA] [PARAFUSADEIRA].jpg"
+                                    <img onclick="change_image(this)" src="/Imagens/UTENCILIOS/[NIVEL TORPEDO 8 MAGNETICO STANLEY].jpg"
                                       width="70" />
-                                    <img onclick="change_image(this)" src="/Imagens/FERRAMENTAS/[FERRAMENTA] [PARAFUSADEIRA].jpg"
+                                    <img onclick="change_image(this)" src="/Imagens/UTENCILIOS/[NIVEL TORPEDO 8 MAGNETICO STANLEY].jpg"
                                       width="70" />
                                   </div>
                                 </div>
@@ -15797,66 +16083,9 @@
                                     <span class="text-uppercase text-muted brand">Vonder®</span>
                                   </div>
                                   <p class="about">
-                                    Conteúdo da Embalagem:1 Rolo de arame galvanizado com 1 kg Descrição:Arame
-                                    galvanizado comercial BWG 18 1,24 mm VONDERAplicações e dicas de uso:Ideal para
-                                    inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e
-                                    indústrias em geral.
+                                    O Nível em ABS com Bolha Tipo Torpedo 8" Stanley 442291 é indicado para nivelar objetos em três posições: vertical, horizontal e angulada ( 45º ).
                                   </p>
-                                  <!--
-                                    <div class="sizes mt-5">
-                                      <h6 class="text-uppercase">
-                                        Comprimento
-                                      </h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>3000mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>6000mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>
-                                    <div>
-                                      <h6 class="text-uppercase">Dimenções</h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>48mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>70mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>90mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>-->
+                                 
                                   <div class="col-md-4 quantity">
                                     <label for="quantity ">Quantidade:</label>
                                     <input id="quantity" type="number" value="1" class="form-control quantity-input" />
@@ -15874,12 +16103,11 @@
                                           <div class="col">
                                             <div class="collapse multi-collapse" id="multiCollapse1">
                                               <div class="card card-body">
-                                                Material: Aço Galvanizado
+                                                Material:	Stanley
                                                 <br />
-                                                Norma Técnica: NBR - 15.217<br />
-                                                Diâmetro: 18 BWG - 1,24 mm<br />
-                                                Comprimento 106,8 m<br />
-
+                                                Dimensões do item :24 x 7.6 x 2 centímetros<br />
+                                                Comprimento: 20 cm<br />
+                                                3 frascos tubulares: 1 nível, 1 prumo e um frasco de 45°<br />
                                               </div>
                                             </div>
                                           </div>
@@ -15893,9 +16121,7 @@
                                                     <p>
                                                       <strong>Descrição</strong>
                                                     </p>
-                                                    Ideal para inúmeras aplicações, sendo muito utilizado na construção
-                                                    civil, agropecuária e indústrias em geral. Não indicado para
-                                                    aplicação em gesso
+                                                    Possui corpo abs resistente a impactos, desenho com leitura de topo que facilita a visualização, base magnética.
                                                   </li>
                                                 </ul>
                                               </div>
@@ -15931,7 +16157,7 @@
 
           <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
             <div class="collection-img position-relative">
-              <img src="/Imagens/GESSO/GESSO 3D [002].jpg" class="w-100" />
+              <img src="/imagens/GESSO/GESSO 3D [002].jpg" class="w-100" />
               <span
                 class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
             </div>
@@ -15944,7 +16170,116 @@
                 <span class="text-primary"><i class="fas fa-star"></i></span>
               </div>
               <p class="text-capitalize my-1">Placa 3D</p>
-              <span class="fw-bold">Sob Encomenda</span>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#martelo2">
+                Detalhes
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="martelo2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Detalhes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container mt-5 mb-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="images p-3">
+                                  <div class="text-center p-4">
+                                    <img id="main-image" src="/imagens/GESSO/GESSO 3D [002].jpg" width="250" />
+                                  </div>
+                                  <div class="thumbnail text-center">
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [002].jpg"
+                                      width="70" />
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [002].jpg"
+                                      width="70" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="product p-4">
+                                  <div class="mt-4 mb-3">
+                                    <h5 class="text-uppercase">Placa 3D</h5>
+                                    <span class="text-uppercase text-muted brand">Vonder®</span>
+                                  </div>
+                                  <p class="about">
+                                    Os Painéis decorativos 3D dão vida às suas paredes ou teto com designs geométricos modernos e contemporâneos. Dão uma dimensão extra e complementam qualquer ambiente residencial ou comercial, como sala de estar, quarto, cozinha, fundo da tv, paredes e teto na decoração da casa
+                                  </p>
+                                  
+                                  <div class="col-md-4 quantity">
+                                    <label for="quantity ">Quantidade:</label>
+                                    <input id="quantity" type="number" value="1" class="form-control quantity-input" />
+                                  </div>
+                                  <div class="row pt-3">
+                                    <div class="col-md-12 pt-0">
+                                      <ul class="nav nav-tabs">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse1"
+                                          role="button" aria-expanded="false" aria-controls="multiCollapse1">Ficha
+                                          Tecnica</a>
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse2"
+                                          role="button" aria-expanded="false"
+                                          aria-controls="multiCollapse2">Detalhamento</a>
+                                        <div class="row">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse1">
+                                              <div class="card card-body">
+                                                Tamanho: 50x50
+                                                <br />
+                                                Espessura: 0,45 mm<br />
+                                                Cor: Branco Natural (Pintáveis)<br />
+                                                Altura do relevo: até 20mm <br />
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row w-100">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse2">
+                                              <div class="card card-body">
+                                                <ul class="list-group w-100">
+                                                  <li class="list-group-item">
+                                                    <p>
+                                                      <strong>Descrição</strong>
+                                                    </p>
+                                                    Padrões, fotos e desenhos são apenas para fins ilustrativos. A produção final pode variar. Paredes com teor de umidade não são adequada para fixar os Painéis decorativos 3D.
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="cart mt-4 align-items-center">
+                                    <button class="btn btn-danger text-uppercase mr-2 px-4">
+                                      Adicionar ao carrinho
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Fechar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -16004,66 +16339,9 @@
                                     <span class="text-uppercase text-muted brand">Vonder®</span>
                                   </div>
                                   <p class="about">
-                                    Conteúdo da Embalagem:1 Rolo de arame galvanizado com 1 kg Descrição:Arame
-                                    galvanizado comercial BWG 18 1,24 mm VONDERAplicações e dicas de uso:Ideal para
-                                    inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e
-                                    indústrias em geral.
+                                    Seu material inox, evita com que a espátula enferruje, pode ser utilizada também em preparos e revestimentos de superfícies, aplica massas diversas, colas, argamassas e resinas, muito resistente pode ser usada também em raspagem de paredes.
                                   </p>
-                                  <!--
-                                    <div class="sizes mt-5">
-                                      <h6 class="text-uppercase">
-                                        Comprimento
-                                      </h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>3000mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>6000mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>
-                                    <div>
-                                      <h6 class="text-uppercase">Dimenções</h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>48mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>70mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>90mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>-->
+                                 
                                   <div class="col-md-4 quantity">
                                     <label for="quantity ">Quantidade:</label>
                                     <input id="quantity" type="number" value="1" class="form-control quantity-input" />
@@ -16081,10 +16359,11 @@
                                           <div class="col">
                                             <div class="collapse multi-collapse" id="multiCollapse1">
                                               <div class="card card-body">
-                                                Material: Aço Galvanizado
+                                                Tamanho: 27 x 9,5 cm
+
                                                 <br />
-                                                Norma Técnica: NBR - 15.217<br />
-                                                Diâmetro: 18 BWG - 1,24 mm<br />
+                                                Material: Aço e Plástico<br />
+                                                Alta Durabilidade e Resistente a Alta Temperatura.<br />
                                                 Comprimento 106,8 m<br />
 
                                               </div>
@@ -16101,8 +16380,7 @@
                                                       <strong>Descrição</strong>
                                                     </p>
                                                     Ideal para inúmeras aplicações, sendo muito utilizado na construção
-                                                    civil, agropecuária e indústrias em geral. Não indicado para
-                                                    aplicação em gesso
+                                                    civil, agropecuária e indústrias em geral.
                                                   </li>
                                                 </ul>
                                               </div>
@@ -16152,6 +16430,134 @@
               </div>
               <p class="text-capitalize my-1">Martelo</p>
               <span class="fw-bold">$ 45.50</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
+            <div class="collection-img position-relative">
+              <img src="/imagens/GESSO/GESSO 3D [004].jpg" class="w-100" />
+              <span
+                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+            </div>
+            <div class="text-center">
+              <div class="rating mt-3">
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+                <span class="text-primary"><i class="fas fa-star"></i></span>
+              </div>
+              <p class="text-capitalize my-1">Placa 3D</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#martelo4">
+                Detalhes
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="martelo4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Detalhes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container mt-5 mb-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="images p-3">
+                                  <div class="text-center p-4">
+                                    <img id="main-image" src="/imagens/GESSO/GESSO 3D [004].jpg" width="250" />
+                                  </div>
+                                  <div class="thumbnail text-center">
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [004].jpg"
+                                      width="70" />
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [004].jpg"
+                                      width="70" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="product p-4">
+                                  <div class="mt-4 mb-3">
+                                    <h5 class="text-uppercase">Placa 3D</h5>
+                                    <span class="text-uppercase text-muted brand">Vonder®</span>
+                                  </div>
+                                  <p class="about">
+                                    Os Painéis decorativos 3D dão vida às suas paredes ou teto com designs geométricos modernos e contemporâneos. Dão uma dimensão extra e complementam qualquer ambiente residencial ou comercial, como sala de estar, quarto, cozinha, fundo da tv, paredes e teto na decoração da casa
+                                  </p>
+                                  
+                                  <div class="col-md-4 quantity">
+                                    <label for="quantity ">Quantidade:</label>
+                                    <input id="quantity" type="number" value="1" class="form-control quantity-input" />
+                                  </div>
+                                  <div class="row pt-3">
+                                    <div class="col-md-12 pt-0">
+                                      <ul class="nav nav-tabs">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse1"
+                                          role="button" aria-expanded="false" aria-controls="multiCollapse1">Ficha
+                                          Tecnica</a>
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse2"
+                                          role="button" aria-expanded="false"
+                                          aria-controls="multiCollapse2">Detalhamento</a>
+                                        <div class="row">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse1">
+                                              <div class="card card-body">
+                                                Tamanho: 50x50
+                                                <br />
+                                                Espessura: 0,45 mm<br />
+                                                Cor: Branco Natural (Pintáveis)<br />
+                                                Altura do relevo: até 20mm <br />
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row w-100">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse2">
+                                              <div class="card card-body">
+                                                <ul class="list-group w-100">
+                                                  <li class="list-group-item">
+                                                    <p>
+                                                      <strong>Descrição</strong>
+                                                    </p>
+                                                    Padrões, fotos e desenhos são apenas para fins ilustrativos. A produção final pode variar. Paredes com teor de umidade não são adequada para fixar os Painéis decorativos 3D.
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="cart mt-4 align-items-center">
+                                    <button class="btn btn-danger text-uppercase mr-2 px-4">
+                                      Adicionar ao carrinho
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Fechar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -16208,69 +16614,12 @@
                                 <div class="product p-4">
                                   <div class="mt-4 mb-3">
                                     <h5 class="text-uppercase">Desempenadeira</h5>
-                                    <span class="text-uppercase text-muted brand">Vonder®</span>
+                                    <span class="text-uppercase text-muted brand">Galo®</span>
                                   </div>
                                   <p class="about">
-                                    Conteúdo da Embalagem:1 Rolo de arame galvanizado com 1 kg Descrição:Arame
-                                    galvanizado comercial BWG 18 1,24 mm VONDERAplicações e dicas de uso:Ideal para
-                                    inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e
-                                    indústrias em geral.
+                                    Desempenadeira em aço com cabo fechado lisa-Confeccionada com chapa de aço de alto teor de carbono temperado e zincado
                                   </p>
-                                  <!--
-                                    <div class="sizes mt-5">
-                                      <h6 class="text-uppercase">
-                                        Comprimento
-                                      </h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>3000mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>6000mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>
-                                    <div>
-                                      <h6 class="text-uppercase">Dimenções</h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>48mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>70mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>90mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>-->
+                                  
                                   <div class="col-md-4 quantity">
                                     <label for="quantity ">Quantidade:</label>
                                     <input id="quantity" type="number" value="1" class="form-control quantity-input" />
@@ -16288,11 +16637,11 @@
                                           <div class="col">
                                             <div class="collapse multi-collapse" id="multiCollapse1">
                                               <div class="card card-body">
-                                                Material: Aço Galvanizado
+                                                Comprimento: 29cm
                                                 <br />
-                                                Norma Técnica: NBR - 15.217<br />
-                                                Diâmetro: 18 BWG - 1,24 mm<br />
-                                                Comprimento 106,8 m<br />
+                                                Largura: 12cm<br />
+                                                Material da lâmina: Aço<br />
+                                                Material do cabo: Plástico<br />
 
                                               </div>
                                             </div>
@@ -16307,9 +16656,7 @@
                                                     <p>
                                                       <strong>Descrição</strong>
                                                     </p>
-                                                    Ideal para inúmeras aplicações, sendo muito utilizado na construção
-                                                    civil, agropecuária e indústrias em geral. Não indicado para
-                                                    aplicação em gesso
+                                                    As desempenadeiras de aço lisa para gesso são as preferidas dos gesseiros, pois foram produzidas especialmente para atender as necessidades da preparação de superfícies como acartonados, placas de forro e acabamento com gesso em alvenaria
                                                   </li>
                                                 </ul>
                                               </div>
@@ -16345,7 +16692,7 @@
 
           <div class="col-md-6 col-lg-4 col-xl-3 p-2 placa3d">
             <div class="collection-img position-relative">
-              <img src="/Imagens/GESSO/GESSO 3D [003].jpg" class="w-100" />
+              <img src="/imagens/GESSO/GESSO 3D [003].jpg" class="w-100" />
               <span
                 class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
             </div>
@@ -16358,7 +16705,116 @@
                 <span class="text-primary"><i class="fas fa-star"></i></span>
               </div>
               <p class="text-capitalize my-1">Placa 3D</p>
-              <span class="fw-bold">Sob Encomenda</span>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#martelo3">
+                Detalhes
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="martelo3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Detalhes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container mt-5 mb-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="images p-3">
+                                  <div class="text-center p-4">
+                                    <img id="main-image" src="/imagens/GESSO/GESSO 3D [003].jpg" width="250" />
+                                  </div>
+                                  <div class="thumbnail text-center">
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [003].jpg"
+                                      width="70" />
+                                    <img onclick="change_image(this)" src="/imagens/GESSO/GESSO 3D [003].jpg"
+                                      width="70" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="product p-4">
+                                  <div class="mt-4 mb-3">
+                                    <h5 class="text-uppercase">Placa 3D</h5>
+                                    <span class="text-uppercase text-muted brand">Vonder®</span>
+                                  </div>
+                                  <p class="about">
+                                    Os Painéis decorativos 3D dão vida às suas paredes ou teto com designs geométricos modernos e contemporâneos. Dão uma dimensão extra e complementam qualquer ambiente residencial ou comercial, como sala de estar, quarto, cozinha, fundo da tv, paredes e teto na decoração da casa
+                                  </p>
+                                  
+                                  <div class="col-md-4 quantity">
+                                    <label for="quantity ">Quantidade:</label>
+                                    <input id="quantity" type="number" value="1" class="form-control quantity-input" />
+                                  </div>
+                                  <div class="row pt-3">
+                                    <div class="col-md-12 pt-0">
+                                      <ul class="nav nav-tabs">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse1"
+                                          role="button" aria-expanded="false" aria-controls="multiCollapse1">Ficha
+                                          Tecnica</a>
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapse2"
+                                          role="button" aria-expanded="false"
+                                          aria-controls="multiCollapse2">Detalhamento</a>
+                                        <div class="row">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse1">
+                                              <div class="card card-body">
+                                                Tamanho: 50x50
+                                                <br />
+                                                Espessura: 0,45 mm<br />
+                                                Cor: Branco Natural (Pintáveis)<br />
+                                                Altura do relevo: até 20mm <br />
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row w-100">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapse2">
+                                              <div class="card card-body">
+                                                <ul class="list-group w-100">
+                                                  <li class="list-group-item">
+                                                    <p>
+                                                      <strong>Descrição</strong>
+                                                    </p>
+                                                    Padrões, fotos e desenhos são apenas para fins ilustrativos. A produção final pode variar. Paredes com teor de umidade não são adequada para fixar os Painéis decorativos 3D.
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="cart mt-4 align-items-center">
+                                    <button class="btn btn-danger text-uppercase mr-2 px-4">
+                                      Adicionar ao carrinho
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Fechar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -16414,70 +16870,13 @@
                               <div class="col-md-6">
                                 <div class="product p-4">
                                   <div class="mt-4 mb-3">
-                                    <h5 class="text-uppercase">Arame</h5>
-                                    <span class="text-uppercase text-muted brand">Vonder®</span>
+                                    <h5 class="text-uppercase">Espatula de Plastico</h5>
+                                    <span class="text-uppercase text-muted brand">Tigre®</span>
                                   </div>
                                   <p class="about">
-                                    Conteúdo da Embalagem:1 Rolo de arame galvanizado com 1 kg Descrição:Arame
-                                    galvanizado comercial BWG 18 1,24 mm VONDERAplicações e dicas de uso:Ideal para
-                                    inúmeras aplicações, sendo muito utilizado na construção civil, agropecuária e
-                                    indústrias em geral.
+                                    O Aplicador Massa Plástico 2171-02 Tigre é um item que foi fabricado de forma que se tornou ideal para aplicar e espalhar massa sobre diversas superfícies antes de produzir os efeitos de textura, devido ao seu material de plástico flexível.
                                   </p>
-                                  <!--
-                                    <div class="sizes mt-5">
-                                      <h6 class="text-uppercase">
-                                        Comprimento
-                                      </h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>3000mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>6000mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>
-                                    <div>
-                                      <h6 class="text-uppercase">Dimenções</h6>
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="S"
-                                          checked
-                                        />
-                                        <span>48mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>70mm</span> </label
-                                      ><br />
-                                      <label class="radio">
-                                        <input
-                                          type="radio"
-                                          name="size"
-                                          value="M"
-                                        />
-                                        <span>90mm</span>
-                                      </label>
-                                      <br />
-                                      <span>----------------</span>
-                                    </div>-->
+                                 
                                   <div class="col-md-4 quantity">
                                     <label for="quantity ">Quantidade:</label>
                                     <input id="quantity" type="number" value="1" class="form-control quantity-input" />
@@ -16495,12 +16894,10 @@
                                           <div class="col">
                                             <div class="collapse multi-collapse" id="multiCollapse1">
                                               <div class="card card-body">
-                                                Material: Aço Galvanizado
+                                                Altura: 9cm
                                                 <br />
-                                                Norma Técnica: NBR - 15.217<br />
-                                                Diâmetro: 18 BWG - 1,24 mm<br />
-                                                Comprimento 106,8 m<br />
-
+                                                Largura: 16,5cm<br />
+                                                Comprimento: 29,8cm<br />
                                               </div>
                                             </div>
                                           </div>
@@ -16514,9 +16911,7 @@
                                                     <p>
                                                       <strong>Descrição</strong>
                                                     </p>
-                                                    Ideal para inúmeras aplicações, sendo muito utilizado na construção
-                                                    civil, agropecuária e indústrias em geral. Não indicado para
-                                                    aplicação em gesso
+                                                    Não usar produtos químicos ou abrasivos, limpar com sabão neutro. Sempre diluir o produto para limpeza na água, não aplicar diretamente na peça.
                                                   </li>
                                                 </ul>
                                               </div>
@@ -16838,7 +17233,7 @@
   </section>
   --><!-- end of popular -->
 
-  <!-- sancasletter -->
+  <!-- FALE COM VENDENDORES -->
   <section id="newsletter" class="py-5">
     <div class="container">
       <div class="d-flex flex-column align-items-center justify-content-center">
@@ -16856,10 +17251,15 @@
       </div>
     </div>
   </section>
-  <!-- end of newsletter -->
+  <!-- FALE COM VENDENDORES -->
+
+  <!-- BUTTON VOLTAR PRO TOPO-->
   <div class="text-center container">
   <button id='scrollToTop'  href='#'>Voltar para o topo</button>
   </div>
+  <!-- BUTTON VOLTAR PRO TOPO-->
+
+
   <!-- footer -->
   <footer class="bg-dark py-5">
     <div class="container">
