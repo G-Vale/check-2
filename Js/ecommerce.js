@@ -78,6 +78,7 @@ $(".navbar a").on("click", function (e) {
   }
 });
 
+// WHATS SAPP
 $('document').ready(function(){
   
   var wappNumber = 5541992907250;
@@ -107,6 +108,7 @@ $('document').ready(function(){
    
   return false;
 });
+// WHATS SAPP
 
 /* BUSCAR */
 $(document).ready(function () {
@@ -122,9 +124,10 @@ $(document).ready(function () {
   }
   navSearch();
 })
+/* BUSCAR */
 
 
-// jQuery Smooth Scroll
+// jQuery Smooth Scroll //
 $(".navbar a").on("click", function (e) {
   if (this.hash !== "") {
     e.preventDefault();
@@ -138,8 +141,9 @@ $(".navbar a").on("click", function (e) {
     );
   }
 });
+// jQuery Smooth Scroll //
 
-
+// scroll top top //
 $(document).ready(function(){
 
   $(window).scroll(function(){
@@ -155,6 +159,7 @@ $('html, body').animate({scrollTop : 0},800);
 return false;
   }); 
 });
+// scroll top top //
 
 // ENDEREÇO MENU NAVA BAR ///
 (function($){
@@ -190,8 +195,26 @@ return false;
       }
   });
 })(jQuery);
+// ENDEREÇO MENU NAVA BAR ///
 
 $(document).ready(function() {
       $('#rotate').rotaterator({fadeSpeed:1000, pauseSpeed:1000});
 });
 
+// Carousel //
+let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 6
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+// Carousel//
