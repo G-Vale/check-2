@@ -1092,6 +1092,12 @@ header.masthead .masthead-heading {
   }
 }
 
+@media (max-width:767px) {
+  .Distr {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .carousel-inner .carousel-item>div {
     display: none
