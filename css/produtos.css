@@ -303,12 +303,6 @@ ul.navbar-nav>li.active>a {
   float: right;
 }
 
-ul.top-info-box {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-}
 
 @media (max-width: 767px) {
   ul.top-info-box {
@@ -1098,6 +1092,8 @@ header.masthead .masthead-heading {
   }
 }
 
+
+/* CAROUSEL */
 @media (max-width: 767px) {
   .carousel-inner .carousel-item>div {
     display: none
@@ -1131,6 +1127,7 @@ header.masthead .masthead-heading {
 .carousel-inner .carousel-item-start {
   transform: translateX(0)
 }
+/* CAROUSEL */
 
 /* accordion */
 ul { list-style-type: none; }
