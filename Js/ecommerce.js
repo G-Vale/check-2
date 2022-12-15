@@ -246,3 +246,49 @@ $(function() {
    var accordion = new Accordion($('#accordion'), false);
 });
 
+$(document).ready(function(){
+  $("input[type='search']").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".product-item").filter(function() {
+      $(this).toggle($(this).find('.card-title a').text().toLowerCase().indexOf(value) > -1 || $(this).find('img').attr('src').toLowerCase().indexOf(value) > -1 || $(this).find('ul.product-meta a').text().toLowerCase().indexOf(value) > -1 || $(this).find('.card-text').text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+
+/* paginação
+$(document).ready(function() {
+  var itemsPerPage = 6; // number of items to display per page
+  var currentPage = 0; // current page number
+
+  // define function to handle pagination
+  var showPage = function(page) {
+    // hide all product cards
+    $('.product-item').hide();
+    // calculate start and end indices for page
+    var startIndex = page * itemsPerPage;
+    var endIndex = startIndex + itemsPerPage;
+    // show product cards for current page
+    $('.product-item').slice(startIndex, endIndex).show();
+  }
+
+  // show first page of product cards on page load
+  showPage(0);
+
+  // handle click events on pagination buttons
+  $('#Anterior').on('click', function() {
+    if (currentPage > 0) {
+      // show previous page of product cards
+      showPage(currentPage - 1);
+      currentPage--;
+    }
+  });
+  $('#next').on('click', function() {
+    if (currentPage < numPages - 1) {
+      // show next page of product cards
+      showPage(currentPage + 1);
+      currentPage++;
+    }
+  });
+});
+*/
