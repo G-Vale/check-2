@@ -15,6 +15,13 @@
     height: 155px;
 }
 
+:root{
+  --lg-font: 'Kaisei Tokumin', serif;
+  --sm-font: 'Poppins', sans-serif;
+  --pink: #4180ab;
+  --red: #cf8a8a ;
+}
+
 .custom-shape-divider-bottom-1671197500 .shape-fill {
     fill: #FFFFFF;
 }
