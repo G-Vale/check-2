@@ -1426,7 +1426,7 @@ input:focus {
 }
 
 .option input[type="radio"]:checked~.checkmark {
-  background: #ac1f32;
+  background: #1fac50;
   color: #fff;
   transition: 300ms ease-in-out 0s
 }
