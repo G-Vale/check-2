@@ -866,3 +866,59 @@ ul.navbar-nav > li > a {
   margin-bottom: 4rem;
 }
 
+/* CAROUSEL */
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item>div {
+    display: none
+  }
+
+  .carousel-inner .carousel-item>div:first-child {
+    display: block
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex
+}
+
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%)
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%)
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0)
+}
+
+/* CAROUSEL */
+
+
+/* VIDEO YOUTUBE */
+figure { width: 90%; min-width: 17.5em; margin:0 auto;}
+figcaption { font: 120% sans-serif; text-align: center;}
+.boxVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+.boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* VIDEO YOUTUBE */
