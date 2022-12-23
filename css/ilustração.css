@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
 
-
 /*
 div {
  border: solid 2px red;
 }
 */
+
+body{
+    font-family: var(--sm-font);
+}
+
 :root{
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
     --pink: #4180ab;
-}
-body{
-    font-family: var(--sm-font);
 }
 
 .body-inner {
@@ -900,7 +901,6 @@ ul.navbar-nav > li > a {
 .carousel-inner .carousel-item-start {
   transform: translateX(0)
 }
-
 /* CAROUSEL */
 
 

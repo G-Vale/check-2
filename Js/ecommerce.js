@@ -1,3 +1,4 @@
+// SELECIONAR INTEM COM BUTTON
 // init Isotope
 var $grid = $('.collection-list').isotope({
   // options
@@ -16,7 +17,9 @@ function resetFilterBtns(){
     $(this).removeClass('active-filter-btn');
   });
 }
+// SELECIONAR INTEM COM BUTTON
 
+// MODAL
 $(document).ready(function(){
 
 $('.radio-group .radio').click(function(){
@@ -35,7 +38,10 @@ $('.plus-minus .minus').click(function(){
 });
 
 });
+// MODAL
 
+
+// MODAL
 var modalConfirm = function(callback){
   
   $("#btn-confirm").on("click", function(){
@@ -52,6 +58,7 @@ var modalConfirm = function(callback){
     $("#mi-modal").modal('hide');
   });
 };
+// MODAL
 
 modalConfirm(function(confirm){
   if(confirm){
@@ -77,6 +84,7 @@ $(".navbar a").on("click", function (e) {
     );
   }
 });
+// jQuery Smooth Scroll
 
 // WHATS SAPP
 $('document').ready(function(){

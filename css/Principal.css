@@ -76,9 +76,6 @@ border: 0;
 background: none;
 }
 
-.pattern-bg {
-background: #f5f5f5 url(../images/crossword.png);
-}
 
 a[href^=tel] {
 color: inherit;
@@ -1163,5 +1160,67 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
+}
+
+
+/* COOKIE */
+.cookie-bar {
+  position: fixed;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #18bc9c;
+  padding: 1.5rem 0;
+}
+.cookie-bar .container {
+  max-width: 1465px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+.cookie-bar .cookie-bar-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cookie-bar .cookie-bar-inner p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 0 45px 0 0;
+  margin: 0;
+}
+.border-btn {
+  min-width: 12.1rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 1rem 2.2rem;
+  font-size: 1.5rem;
+  line-height: 1.16;
+  text-transform: capitalize;
+  font-family: Open Sans,sans-serif;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  height: 4.1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.border-btn:hover {
+  border-color: #fa8503;
+  background-color: #fa8503;
+}
+a, a:active, a:hover, a:link, a:visited {
+  outline: none;
+  text-decoration: none;
+  transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
 }
 

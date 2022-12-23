@@ -29,9 +29,10 @@ $('html, body').animate({scrollTop : 0},800);
 return false;
   }); 
 });
+// jQuery Smooth Scroll
 
 
-// BUSCAR
+// BUSCAR //
 function searchBar() {
   $('#searchText').on('keyup', function() {
   let searchString = $(this).val();
@@ -46,10 +47,10 @@ function searchBar() {
   });
 });
 };
-
 searchBar();
+// BUSCAR //
 
-
+// WHATSAPP //
 $('document').ready(function(){
   
   var wappNumber = 5541992619201;
@@ -79,6 +80,7 @@ $('document').ready(function(){
    
   return false;
 });
+// WHATSAPP //
 
 // ENDEREÇO MENU NAVA BAR ///
 (function($){
@@ -114,11 +116,13 @@ $('document').ready(function(){
       }
   });
 })(jQuery);
+// ENDEREÇO MENU NAVA BAR ///
 
+// ENDREÇO NO COMEÇO
 $(document).ready(function() {
       $('#rotate').rotaterator({fadeSpeed:1000, pauseSpeed:1000});
 });
-
+// ENDREÇO NO COMEÇO
 
 function myTimer() {
   var ending = jQuery("#timer").attr("data-endtime"),
@@ -196,6 +200,7 @@ $(document).ready(function () {
   }
   navSearch();
 })
+/* BUSCAR */
 
 // Carousel //
 let items = document.querySelectorAll('.carousel .carousel-item')
@@ -213,5 +218,33 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
 // Carousel//
 
+
+ //  cookie hide show
+jQuery(".cookie-bar").css("opacity","1");
+    var now = new Date();
+    var time = now.getTime();
+    var expireTime = time + 30*24*60*60*1000;
+    now.setTime(expireTime);
+    if (document.cookie.indexOf("ModalShown=true") < 0) {
+        jQuery("#cookie-button").click(function () {
+            document.cookie = "ModalShown=true; expires="+now.toGMTString()+";path=/";      
+        });
+    } 
+    else {
+        jQuery(".cookie-bar").remove();
+    }
+
+
+    $('.cookie-bar .cookie-bar-inner #cookie-button').click(function(){
+        var _this = jQuery(this);
+        jQuery(this).closest(".cookie-bar").slideUp();
+        var headerHeight = jQuery('header').innerHeight();
+        setTimeout(function(){
+            _this.closest(".cookie-bar").remove();
+        },300);
+    });
+
+    //  cookie hide show
