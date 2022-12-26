@@ -53,7 +53,7 @@ searchBar();
 // WHATSAPP //
 $('document').ready(function(){
   
-  var wappNumber = 5541992619201;
+  var wappNumber = 554192435474;
   var wappMessage = 'Olá! Tudo bem? quero falar com um atendente';
   var wappBackground = '#00e676';
   var wappIconColor = '#fff';

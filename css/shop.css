@@ -1,30 +1,4 @@
-.custom-shape-divider-bottom-1671197500 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
 
-.custom-shape-divider-bottom-1671197500 svg {
-    position: relative;
-    display: block;
-    width: calc(138% + 1.3px);
-    height: 155px;
-}
-
-:root{
-  --lg-font: 'Kaisei Tokumin', serif;
-  --sm-font: 'Poppins', sans-serif;
-  --pink: #4180ab;
-  --red: #cf8a8a ;
-}
-
-.custom-shape-divider-bottom-1671197500 .shape-fill {
-    fill: #FFFFFF;
-}
 
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
@@ -283,6 +257,34 @@ textarea.form-control {
 /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder {
   color: #666;
+}
+
+.custom-shape-divider-bottom-1671197500 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671197500 svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 155px;
+}
+
+:root{
+  --lg-font: 'Kaisei Tokumin', serif;
+  --sm-font: 'Poppins', sans-serif;
+  --pink: #4180ab;
+  --red: #cf8a8a ;
+}
+
+.custom-shape-divider-bottom-1671197500 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* Internet Explorer 10-11 */
@@ -2968,3 +2970,17 @@ ul.navbar-nav>li>a {
   transform: translateX(0)
 }
 /* CAROUSEL */
+
+/* title */
+.title h2::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--pink);
+  left: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

@@ -89,7 +89,7 @@ $(".navbar a").on("click", function (e) {
 // WHATS SAPP
 $('document').ready(function(){
   
-  var wappNumber = 5541992907250;
+  var wappNumber = 554192435474;
   var wappMessage = 'Olá! Tudo bem? quero falar com um atendente';
   var wappBackground = '#00e676';
   var wappIconColor = '#fff';
