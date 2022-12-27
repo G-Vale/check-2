@@ -72,7 +72,7 @@
                         <li class="nav-item"> <a class="nav-link active" href="#">New</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="#">Inicio</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="/ecommerce.html">Ecommerce</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Blog</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="/minhaconta.html">Minha conta</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="/ilustraçao.html">Ficha Tecnica</a> </li>
                     </ul>
                     <ul class="d-flex mb-0 ">
@@ -314,222 +314,137 @@
         </div>
     </div>
 
-
-
-    <div class="col-lg-6 delivery px-md-3 px-1">
-        <p class="pt-4 fw-bold pb-3 ps-2"> Forma de Pagamento</p>
-        <div class="d-md-flex justify-content-between align-items-center pb-4">
-            <div class="size d-flex ps-4"> <label class="option d-flex align-items-center"> <input type="radio"
-                        name="radio">
-                    <div class="card">
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="bi bi-credit-card" style="font-size:2.5em;"></i>
-                            </div>
-                            <div class=" d-flex flex-column px-3">
-                                <p class="fw-bold pb-1">Cartão Debito e Crétido</p> <small
-                                    class="text-muted pb-1">Transferência com</small> <small
-                                    class="text-muted pb-1">prazo de: 2 horas</small>
-                            </div>
-                        </div>
-                    </div> <span class="checkmark"></span>
-                </label>
+    <div class=" container card-group">
+        <div class="card">
+            <div class="card-header fw-bold">Forma de pagamento</div>
+            <div class="card-body">
+                <form>
+                    <div class="form-check"><i class="bi bi-credit-card" style="font-size:1.5em;"></i>
+                        <input class="form-check-input" type="radio" name="payment" id="paymentCard" value="card"
+                            checked>
+                        <label class="form-check-label" for="paymentCard">
+                            Cartão Debito/Cretido
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check"><i class="bi bi-receipt-cutoff" style="font-size:1.5em;"></i>
+                        <input class="form-check-input" type="radio" name="payment" id="paymentBoleto" value="boleto">
+                        <label class="form-check-label" for="paymentBoleto">
+                            Boleto
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check"><i class="bi bi-file-arrow-up" style="font-size:1.5em;"></i>
+                        <input class="form-check-input" type="radio" name="payment" id="paymentPix" value="pix">
+                        <label class="form-check-label" for="paymentPix">
+                            Pix
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check"> <i class="bi bi-bank" style="font-size:1.5em;"></i>
+                        <input class="form-check-input" type="radio" name="payment" id="paymentTransfer"
+                            value="transfer">
+                        <label class="form-check-label" for="paymentTransfer">
+                            Transferência bancária
+                        </label>
+                    </div>
+                </form>
             </div>
-            <div class="size d-flex pt-md-0 pt-3 ps-md-0 ps-4"> <label class="option d-flex align-items-center">
-                    <input type="radio" name="radio">
-                    <div class="card">
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="bi bi-receipt-cutoff" style="font-size:2.5em;"></i>
-                            </div>
-                            <div class=" d-flex flex-column px-3">
-                                <p class="fw-bold pb-1">Boleto</p> <small class="text-muted pb-1">Transferência
-                                    com
-                                </small> <small class="text-muted pb-1">prazo: 48 horas</small>
-                            </div>
-                        </div>
-                    </div> <span class="checkmark"></span>
-                </label> </div>
         </div>
-        <div class="d-md-flex justify-content-between align-items-center pb-4">
-            <div class="size d-flex ps-4"> <label class="option d-flex align-items-center"> <input type="radio"
-                        name="radio">
-                    <div class="card">
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="bi bi-bank" style="font-size:2.5em;"></i>
-                            </div>
-                            <div class=" d-flex flex-column px-3">
-                                <p class="fw-bold pb-1">Transferência bancária</p> <small
-                                    class="text-muted pb-1">Transferência com</small> <small
-                                    class="text-muted pb-1">prazo de: 24 horas</small>
-                            </div>
-                        </div>
-                    </div> <span class="checkmark"></span>
-                </label> </div>
-            <div class="size d-flex pt-md-0 pt-3 ps-md-0 ps-4"> 
-                <label class="option d-flex align-items-center">
-                    <input type="radio" name="radio">
-                    <div class="card">
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="bi bi-file-arrow-up" style="font-size:2.5em;"></i>
-                            </div>
-                            <div class=" d-flex flex-column px-3">
-                                <p class="fw-bold pb-1">PIX</p> <small class="text-muted pb-1">Transferência
-                                    com</small> <small class="text-muted pb-1">prazo: 2 horas</small>
-                            </div>
+        
+        <div class="card">
+            <div class="card-header fw-bold">Modo de entrega</div>
+            <div class="card-body">
+                <form>
+                    <div class="form-check"><i class="bi bi-shop" style="font-size:2.5em;"></i>
+                        <input class="form-check-input" type="radio" name="delivery" id="deliveryStore" value="store"
+                            checked>
+                        <label class="form-check-label" for="deliveryStore">
+                            Retirar na loja
+                        </label>
+
+                        <div class="card-text"> <small class="text-muted">Disponível em 24 horas</small>
                         </div>
                     </div>
-                     <span class="checkmark"></span>
-                </label>
-             </div>
+                    <hr>
+                    <div class="form-check"><i class="bi bi-truck" style="font-size:2.5em;"></i>
+                        <input class="form-check-input" type="radio" name="delivery" id="deliveryShip" value="ship">
+                        <label class="form-check-label" for="deliveryShip">
+                            Entrega Padrão
+
+                        </label>
+                        <div class="card-text"> <small class="text-muted">Disponível em 48 horas</small></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora de CEP</h5>
+                        <p class="card-text">Insira o seu CEP para calcular o frete:</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="cep">CEP</label>
+                                <input type="text" class="form-control" id="cep" placeholder="Insira seu CEP">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Calcular</button>
+                            <a href="" class="p-2">Não sei meu CEP!</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Compre pelo Telefone</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="color: #45c655;"><i class="bi bi-whatsapp"></i> Whatsapp:
+                                <a title="whatsapp"
+                                    href="https://api.whatsapp.com/send/?phone=5541992907250&text&app_absent=0"
+                                    target="_blank">(41)99290-7250 </a><small class="text-muted"> -Matriz</small></li>
+                            <li class="list-group-item"><i class="bi bi-telephone-inbound"></i> Telefone: <a
+                                    href="">(41)3238-2008</a> <small class="text-muted"> -Filial</small></li>
+                            <li class="list-group-item" style="color: #45c655;"><i class="bi bi-whatsapp"></i> Whatsapp:
+                                <a title="whatsapp"
+                                    href="https://api.whatsapp.com/send/?phone=554192435474&text&app_absent=0"
+                                    target="_blank">(41)99243-5474</a> <small class="text-muted"> -Vendedor</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Selecione todas as opcões, para a proxima etapa</p>
+                        <form>
+                            <button type="submit" class="btn btn-primary"><a href="/confirmarPedido.html">Confirmar
+                                    Carrinho</a></button>
+                            <button type="submit" class="btn btn-primary"><a href="/shop.html"> Contiunar
+                                    comprando</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="col-lg-8 delivery px-md-3 px-1">
-        <p class="pt-4 fw-bold pb-3 ps-2"> Entrega</p>
-        <div class="d-md-flex justify-content-between align-items-center pb-4">
-            <div class="size d-flex ps-4"> <label class="option d-flex align-items-center"> <input type="radio"
-                        name="radio">
-                    <div class="card">
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="bi bi-shop" style="font-size:2.5em;"></i>
-                            </div>
-                            <div class=" d-flex flex-column px-3">
-                                <p class="fw-bold pb-1">Retirar na Loja</p> <small class="text-muted pb-1">Mercadoria
-                                    ficara</small> <small class="text-muted pb-1">pronta em: 24 horas</small>
-                            </div>
-                            <div class="btn btn-primary p-2" disabled>GRÁTIS</div>
-                        </div>
-                    </div> <span class="checkmark"></span>
-                </label> </div>
-            <div class="size d-flex pt-md-0 pt-3 ps-md-0 ps-4"> <label class="option d-flex align-items-center">
-                    <input type="radio" name="radio">
-                    <div class="card">
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="bi bi-truck" style="font-size:2.5em;"></i>
-                            </div>
-                            <div class=" d-flex flex-column px-3">
-                                <p class="fw-bold pb-1">Entrega Padrão</p> <small class="text-muted pb-1">Entregamos
-                                    em</small> <small class="text-muted pb-1">até: 48 horas</small>
-                            </div>
-                            <div class="btn btn-primary p-2">Consultar CEP</div>
-                        </div>
-                    </div> <span class="checkmark"></span>
-                </label> </div>
-        </div>
-    </div>
 
-    <div class="col-lg-4">
-        <p class="pt-4 fw-bold pb-3">Serviços Adicionais</p>
-        <div class="card p-3 mb-2">
-            <div class="d-flex align-items-center justify-content-between">
-                <div>
-                    <p class="fw-bold">Seguro no frete</p> <small class="text-muted">Proteja sua carga de
-                        Roubos, furtos e acidentes.</small>
-                </div>
-                <div class="d-flex align-items-center">
-                    <p class="pe-3">$10.00</p>
-                    <div class="form-check form-switch"> <input class="form-check-input" type="checkbox"
-                            id="SwitchCheck"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="card p-3 mb-2">
-            <div class="d-flex align-items-center justify-content-between">
-                <div>
-                    <p class="fw-bold">Environment Friendly</p> <small class="text-muted">Add some tip for earth
-                        care</small>
-                </div>
-                <div class="d-flex align-items-center">
-                    <p class="pe-3">$2.00</p>
-                    <div class="form-check form-switch"> <input class="form-check-input" type="checkbox"
-                            id="SwitchCheck"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="card p-3 mb-2">
-            <div class="d-flex align-items-center justify-content-between">
-                <div>
-                    <p class="fw-bold">Golden Guard</p> <small class="text-muted">30 days more for
-                        return</small>
-                </div>
-                <div class="d-flex align-items-center">
-                    <p class="pe-3">$5.00</p>
-                    <div class="form-check form-switch"> <input class="form-check-input" type="checkbox"
-                            id="SwitchCheck"> </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     </div>
     </div>
     <!-- NAV/BAR -->
 
     <hr>
-    <div class=" container card-group">
-        <div class="card">
-          <div class="card-header">Forma de pagamento</div>
-          <div class="card-body">
-            <form>
-              <div class="form-check"><i class="bi bi-credit-card"style="font-size:1.5em;" ></i>
-                <input class="form-check-input" type="radio" name="payment" id="paymentCard" value="card" checked>
-                <label class="form-check-label" for="paymentCard">
-                  Cartão Debito/Cretido
-                </label>
-              </div>
-              <hr>
-              <div class="form-check"><i class="bi bi-receipt-cutoff"style="font-size:1.5em;"></i>
-                <input class="form-check-input" type="radio" name="payment" id="paymentBoleto" value="boleto">
-                <label class="form-check-label" for="paymentBoleto">
-                  Boleto
-                </label>
-              </div>
-              <hr>
-              <div class="form-check"><i class="bi bi-file-arrow-up" style="font-size:1.5em;"></i>
-                <input class="form-check-input" type="radio" name="payment" id="paymentPix" value="pix">
-                <label class="form-check-label" for="paymentPix">
-                  Pix
-                </label>
-              </div>
-              <hr>
-              <div class="form-check"> <i class="bi bi-bank" style="font-size:1.5em;"></i>
-                <input class="form-check-input" type="radio" name="payment" id="paymentTransfer" value="transfer">
-                <label class="form-check-label" for="paymentTransfer">
-                  Transferência bancária
-                </label>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">Modo de entrega</div>
-          <div class="card-body">
-            <form>
-              <div class="form-check"><i class="bi bi-shop" style="font-size:2.5em;"></i>
-                <input class="form-check-input" type="radio" name="delivery" id="deliveryStore" value="store" checked>
-                <label class="form-check-label" for="deliveryStore">
-                  Retirar na loja
-                </label>
-                <div class="card-text"> <small class="text-muted">Disponível em 24 horas</small></div>
-              </div>
-              <hr>
-              <div class="form-check"><i class="bi bi-truck" style="font-size:2.5em;"></i>
-                <input class="form-check-input" type="radio" name="delivery" id="deliveryShip" value="ship">
-                <label class="form-check-label" for="deliveryShip">
-                    Entrega Padrão
-                </div>
-                <div class="card-text"> <small class="text-muted">Disponível em 48 horas</small></div>
-                </label>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      
+
+
 
     <!-- footer -->
     <footer class="bg-dark py-5">
