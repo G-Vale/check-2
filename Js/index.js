@@ -4,8 +4,9 @@ window.onload = function() {
   setTimeout(function() {
     window.location = 'https://www.gessodrywallgds.com.br/';
     document.getElementById('loading').classList.remove('loading');
+    window.onload = null;
   }, 2000);
-  window.onload = null;
+  clearTimeout();
 };
 
 
