@@ -4,10 +4,10 @@ window.onload = function() {
   setTimeout(function() {
     window.location = 'https://www.gessodrywallgds.com.br/';
     document.getElementById('loading').classList.remove('loading');
-    
   }, 2000);
+  window.onload = null; // adicione essa linha
 };
-window.onload = null;
+
 // jQuery Smooth Scroll
 $(".navbar a").on("click", function (e) {
   if (this.hash !== "") {
