@@ -6,6 +6,7 @@ window.onload = function() {
     document.getElementById('loading').classList.remove('loading');
   }, 2000);
   window.onload = null; // adicione essa linha
+  document.body.innerHTML = null;
 };
 
 // jQuery Smooth Scroll
