@@ -7,6 +7,22 @@ div {
     border: 2px solid rgb(153, 0, 0);
 }
 */
+.loading {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border: 8px solid #8da9db;
+  border-top-color: #2f5496;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .card{
   transition:0.5s;
   cursor:pointer;
