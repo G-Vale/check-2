@@ -1,9 +1,11 @@
 // SLL ATULIZADOR 
 document.body.innerHTML = '<div id="loading" class="mt-n1 mx-auto m-20 loading "></div>';
-    setTimeout(function() {
-      window.location = 'https://www.gessodrywallgds.com.br/';
-      document.getElementById('loading').classList.remove('loading');
-    }, 2000);
+window.onload = function() {
+  setTimeout(function() {
+    window.location = 'https://www.gessodrywallgds.com.br/';
+    document.getElementById('loading').classList.remove('loading');
+  }, 2000);
+};
 
 
 // jQuery Smooth Scroll
