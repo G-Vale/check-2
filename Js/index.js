@@ -14,6 +14,11 @@ $(document).ready(function() {
 $(window).on('load', function() {
   $('.loading-screen').fadeOut(40000);
 });
+window.onload = function(){
+  setTimeout(function(){
+      window.location.href="https://www.gessodrywallgds.com.br";
+  }, 1000);
+};
 // jQuery Smooth Scroll
 $(".navbar a").on("click", function (e) {
   if (this.hash !== "") {
