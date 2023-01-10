@@ -256,5 +256,4 @@ jQuery(".cookie-bar").css("opacity","1");
             _this.closest(".cookie-bar").remove();
         },300);
     });
-
     //  cookie hide show

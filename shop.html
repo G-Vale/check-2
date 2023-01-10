@@ -559,54 +559,10 @@
           <div class="category-sidebar">
             <div><h3>Pesquisar Produtos</h3></div>
         <div class="search-box">
-          <input type="search" class="form-control" placeholder="Pesquisar...">
+          <input type="search" id="searchText" class="form-control input-text"  aria-label="Recipient's username" aria-describedby="basic-addon2" onkeyup="myFunction()"placeholder="Pesquisar...">
         </div>
-            <div class="widget category-list">
-              <h4 class="widget-header">Todas Categoria</h4>
-              <ul class="category-list">
-                <li><a href="category.html">Drywall <span>61</span></a></li>
-                <li><a href="category.html">Steel Frame <span>23</span></a></li>
-                <li><a href="category.html">Forro <span>13</span></a></li>
-                <li><a href="category.html">Ferramentas <span>42</span></a></li>
-                <li><a href="category.html">Gesso <span>23</span></a></li>
-                <li><a href="category.html">Materias Elétricos <span>33</span></a></li>
-              </ul>
-            </div>
 
-            <div class="widget category-list">
-              <h4 class="widget-header">Subcategorias</h4>
-              <ul class="category-list">
-                <li><a href="category.html">Parafusos<span>93</span></a></li>
-                <li><a href="category.html">Fitas<span>233</span></a></li>
-                <li><a href="category.html">Termoacustico<span>183</span></a></li>
-                <li><a href="category.html">Lâmpadas <span>120</span></a></li>
-                <li><a href="category.html">Tintas <span>40</span></a></li>
-                <li><a href="category.html">Massas<span>81</span></a></li>
-              </ul>
-            </div>
-
-            <div class="widget filter">
-              <h4 class="widget-header">Mostrar produtos</h4>
-              <select>
-                <option>Popular</option>
-                <option value="1">Mais buscados</option>
-                <option value="2">Preço mais baixo</option>
-                <option value="4">Preço mais alto</option>
-              </select>
-            </div>
-
-            <div class="widget price-range w-100">
-              <h4 class="widget-header">Pesquisa pelo Preço</h4>
-              <div class="block">
-                <input class="range-track w-100" type="text" data-slider-min="0" data-slider-max="5000"
-                  data-slider-step="5" data-slider-value="[0,5000]">
-                <div class="d-flex justify-content-between mt-2">
-                  <span class="value">R$5 - R$1000</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="widget product-shorting filter-button-group" >
+        <div class="widget product-shorting filter-button-group" >
               <h4 class="widget-header">Pesquisa por Marcas</h4>
               <div class="form-check">
                 <label class="form-check-label">
@@ -652,26 +608,75 @@
               </div>
             </div>
 
+            <div class="widget category-list">
+              <h4 class="widget-header">Todas Categoria</h4>
+              <ul class="category-list">
+                <li><a href="category.html">Drywall <span>61</span></a></li>
+                <li><a href="category.html">Steel Frame <span>23</span></a></li>
+                <li><a href="category.html">Forro <span>13</span></a></li>
+                <li><a href="category.html">Ferramentas <span>42</span></a></li>
+                <li><a href="category.html">Gesso <span>23</span></a></li>
+                <li><a href="category.html">Materias Elétricos <span>33</span></a></li>
+              </ul>
+            </div>
+
+            <div class="widget category-list">
+              <h4 class="widget-header">Subcategorias</h4>
+              <ul class="category-list">
+                <li><a href="category.html">Parafusos<span>93</span></a></li>
+                <li><a href="category.html">Fitas<span>233</span></a></li>
+                <li><a href="category.html">Termoacustico<span>183</span></a></li>
+                <li><a href="category.html">Lâmpadas <span>120</span></a></li>
+                <li><a href="category.html">Tintas <span>40</span></a></li>
+                <li><a href="category.html">Massas<span>81</span></a></li>
+              </ul>
+            </div>
+
+            <div class="widget filter">
+              <h4 class="widget-header">Mostrar produtos</h4>
+              <select>
+                <option>Popular</option>
+                <option value="1">Mais buscados</option>
+                <option value="2">Preço mais baixo</option>
+                <option value="4">Preço mais alto</option>
+              </select>
+            </div>
+
+            <div class="widget price-range w-100">
+              <h4 class="widget-header">Pesquisa pelo Preço</h4>
+              <div class="block">
+                <input class="range-track w-100" type="text" data-slider-min="0" data-slider-max="5000"
+                  data-slider-step="5" data-slider-value="[0,5000]">
+                <div class="d-flex justify-content-between mt-2">
+                  <span class="value">R$5 - R$1000</span>
+                </div>
+              </div>
+            </div>
+
+            
+
           </div>
         </div>
+      
         <div class="col-lg-9 col-md-8">
+          <main class="flex-fill container ">
           <div class="product-grid-list list-group" >
             <div class="row mt-30">
               <div class="col-lg-4 col-md-6">
                 <!-- product card -->
-                <div class="product-item bg-light">
+                <div class="product-item bg-light ">
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
-                        <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][RU].jpg" alt="Card image cap">
+                      <a href="#">
+                        <img  src="/Imagens/DRYWALL/[PLACA][RU].jpg" class="card-img-top img-fluid">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa RU</a></h4>
+                      <h4 class="card-title"><a href="#">Placa RU</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -686,21 +691,21 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 ">
                 <!-- product card -->
                 <div class="product-item bg-light">
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][RF].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa RF</a></h4>
+                      <h4 class="card-title"><a href="#">Placa RF</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -714,22 +719,22 @@
                     </div>
                   </div>
                 </div>
-              </div> 
+              </div>  
               <div class="col-lg-4 col-md-6">
                 <!-- product card -->
                 <div class="product-item bg-light">
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][ST].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa ST</a></h4>
+                      <h4 class="card-title"><a href="#">Placa ST</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -752,16 +757,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][PERFOMA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa Perfoma</a></h4>
+                      <h4 class="card-title"><a href="#">Placa Perfoma</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -789,16 +794,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][RF][FORTÍSSIMA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa RF Fortíssima</a></h4>
+                      <h4 class="card-title"><a href="#">Placa RF Fortíssima</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -822,16 +827,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][TOP].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa TOP</a></h4>
+                      <h4 class="card-title"><a href="#">Placa TOP</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -859,16 +864,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][GYPSOM][001].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa Gypsom</a></h4>
+                      <h4 class="card-title"><a href="#">Placa Gypsom</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -892,16 +897,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][GYPSOM][002].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa Gypsom 2</a></h4>
+                      <h4 class="card-title"><a href="#">Placa Gypsom 2</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -925,16 +930,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[PLACA][GYPSOM][003].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa Gypsom 3</a></h4>
+                      <h4 class="card-title"><a href="#">Placa Gypsom 3</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Drywall</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Drywall</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -958,16 +963,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/UTENCILIOS/[UTENCILIOS][LÃ DE ROCHA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Lã de Rocha</a></h4>
+                      <h4 class="card-title"><a href="#">Lã de Rocha</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>isover®</a>
@@ -988,16 +993,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/UTENCILIOS/[UTENCILIOS][LÃ DE PET].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Lã de Pet</a></h4>
+                      <h4 class="card-title"><a href="#">Lã de Pet</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>isover®</a>
@@ -1019,16 +1024,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/DRYWALL/[LAN DE VIDRO] [001].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Lã de Vidro</a></h4>
+                      <h4 class="card-title"><a href="#">Lã de Vidro</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>isover®</a>
@@ -1051,16 +1056,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid"
                           src="/imagens/UTENCILIOS/[UTENCILIOS][FITA TERMOACUSTICA].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Fita Termoacustica</a></h4>
+                      <h4 class="card-title"><a href="#">Fita Termoacustica</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Termoacustico</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Perfilar®</a>
@@ -1083,16 +1088,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/UTENCILIOS/[UTENCILIO][FITA PAPEL].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Fita Papel</a></h4>
+                      <h4 class="card-title"><a href="#">Fita Papel</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Fitas</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Fitas</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Ancora®</a>
@@ -1114,16 +1119,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/UTENCILIOS/[UTENCILIO][ARAME].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Arame</a></h4>
+                      <h4 class="card-title"><a href="#">Arame</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Acessorios</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Acessorios</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Vonder®</a>
@@ -1145,16 +1150,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/UTENCILIOS/[UTENCILIOS][MASSA CORRIDA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Massa corrida</a></h4>
+                      <h4 class="card-title"><a href="#">Massa corrida</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Massas</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Massas</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Active®</a>
@@ -1176,16 +1181,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/UTENCILIOS/[MASSA] [DRYWALL].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Massa Drywall</a></h4>
+                      <h4 class="card-title"><a href="#">Massa Drywall</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Massas</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Massas</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Holdflex®</a>
@@ -1207,16 +1212,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/PERFIL/[PERFIL][DRYWALL][REGULADOR OMEGA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Regulador Ômega</a></h4>
+                      <h4 class="card-title"><a href="#">Regulador Ômega</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Acessorio</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Acessorio</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>F530</a>
@@ -1239,16 +1244,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/PERFIL/[PERFIL][DRYWALL][EMENDA F-530].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Emenda F-530</a></h4>
+                      <h4 class="card-title"><a href="#">Emenda F-530</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Perfil</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Perfil</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>F-530</a>
@@ -1271,16 +1276,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/PERFIL/[PERFIL][DRYWALL][MONTATE].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Montante</a></h4>
+                      <h4 class="card-title"><a href="#">Montante</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Perfil</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Perfil</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Perfilar®</a>
@@ -1302,16 +1307,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/PERFIL/[PERFIL][DRYWALL][CANTONEIRA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Cantoneira</a></h4>
+                      <h4 class="card-title"><a href="#">Cantoneira</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Perfil</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Perfil</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Perfilar®</a>
@@ -1336,16 +1341,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/PARAFUSOS/[PARAFUSO][TA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Parafuso TA</a></h4>
+                      <h4 class="card-title"><a href="#">Parafuso TA</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Gypsum®</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Gypsum®</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>F-530</a>
@@ -1367,16 +1372,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/PARAFUSOS/[PARAFUSO][TB].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Parafuso TB</a></h4>
+                      <h4 class="card-title"><a href="#">Parafuso TB</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Parafusos</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Parafusos</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -1398,16 +1403,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/PARAFUSOS/[PARAFUSO][LA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Parafuso LA</a></h4>
+                      <h4 class="card-title"><a href="#">Parafuso LA</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Parafuso</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Parafuso</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gypsum®</a>
@@ -1429,16 +1434,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/PARAFUSOS/[PARAFUSO][LB].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Parafuso LB</a></h4>
+                      <h4 class="card-title"><a href="#">Parafuso LB</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Parafusos</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Parafusos</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>GYPSUM®</a>
@@ -1460,16 +1465,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/PARAFUSOS/[UTENCILIO][BUCHA NYLON N° 6].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Bucha Nylon</a></h4>
+                      <h4 class="card-title"><a href="#">Bucha Nylon</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Parafusos</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Parafusos</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Vonder®</a>
@@ -1490,16 +1495,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/STEEL FRAME/[PLACA][OSB].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Painel OSB</a></h4>
+                      <h4 class="card-title"><a href="#">Painel OSB</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Painel</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Painel</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Perfilar®</a>
@@ -1520,16 +1525,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/STEEL FRAME/[PLACA][CIMENTICIA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa Cimenticia</a></h4>
+                      <h4 class="card-title"><a href="#">Placa Cimenticia</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Painel</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Painel</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gesla®</a>
@@ -1551,16 +1556,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/STEEL FRAME/[BASE][COAT].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Base Coat</a></h4>
+                      <h4 class="card-title"><a href="#">Base Coat</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Massas</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Massas</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Placo®</a>
@@ -1581,16 +1586,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/STEEL FRAME/[MEMBRANA HIDRO].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Membrana Hidrófuga</a></h4>
+                      <h4 class="card-title"><a href="#">Membrana Hidrófuga</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Isolamento</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Isolamento</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Gesla®</a>
@@ -1611,16 +1616,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/STEEL FRAME/[PLACA][GLASROC].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa GlasRoc</a></h4>
+                      <h4 class="card-title"><a href="#">Placa GlasRoc</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Painel</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Painel</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>GlasRoc®</a>
@@ -1641,16 +1646,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/FORRO/[PERFIL][TRAVESSA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Travessa</a></h4>
+                      <h4 class="card-title"><a href="#">Travessa</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Perfil</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Perfil</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Perfilar®</a>
@@ -1673,16 +1678,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/PINTURA/[CORANTE][SUVINIL BISNAGA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Corante Suvinil</a></h4>
+                      <h4 class="card-title"><a href="#">Corante Suvinil</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Tintas</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Tintas</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Suvinil®</a>
@@ -1703,16 +1708,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/PINTURA/[ROLO ANTIRESPINGO].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Rolo Antirespingo</a></h4>
+                      <h4 class="card-title"><a href="#">Rolo Antirespingo</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Pinceis</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Pinceis</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Tigre®</a>
@@ -1733,16 +1738,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/PERFIL/[PERFIL][DRYWALL][TABICA LISA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Tabica</a></h4>
+                      <h4 class="card-title"><a href="#">Tabica</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Perfil</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Perfil</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Perfilar®</a>
@@ -1766,16 +1771,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[EPI] [LUVA VAQUETA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Luva Vaqueta</a></h4>
+                      <h4 class="card-title"><a href="#">Luva Vaqueta</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>EPI</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>EPI</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Petroleira®</a>
@@ -1796,16 +1801,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[EPI] [LUVA DE SEGURANÇA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Luva de Segurança</h4>
+                      <h4 class="card-title"><a href="#">Luva de Segurança</h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>EPI</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>EPI</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Kalipso®</a>
@@ -1826,16 +1831,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/Imagens/FORRO/[PERFIL][LONGARINA].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Longarina</a></h4>
+                      <h4 class="card-title"><a href="#">Longarina</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Perfil</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Perfil</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Perfilar®</a>
@@ -1858,16 +1863,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid"
                           src="/imagens/FERRAMENTAS/[FERRAMENTA][ALICATE UNIVERSAL].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Alicate Universal</a></h4>
+                      <h4 class="card-title"><a href="#">Alicate Universal</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramentas</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Ferramentas</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Vonder®</a>
@@ -1890,16 +1895,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/GESSO/GESSO 3D [001].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa 3D</a></h4>
+                      <h4 class="card-title"><a href="#">Placa 3D</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Gesso</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Gesso</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>gesso3d®</a>
@@ -1922,16 +1927,16 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/GESSO/GESSO 3D [002].jpg"
                           alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Placa 3D </a></h4>
+                      <h4 class="card-title"><a href="#">Placa 3D </a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Gesso</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Gesso</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>gesso3d®</a>
@@ -1954,15 +1959,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/GESSO/[PLAQUETA].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Plaqueta</a></h4>
+                      <h4 class="card-title"><a href="#">Plaqueta</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Gesso</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Gesso</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>gesso3d®</a>
@@ -1984,15 +1989,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/GESSO/[SANCA] [003].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Sanca</a></h4>
+                      <h4 class="card-title"><a href="#">Sanca</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Gesso</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Gesso</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>bresso®</a>
@@ -2015,15 +2020,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/GESSO/[SANCA] [001].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Sanca</a></h4>
+                      <h4 class="card-title"><a href="#">Sanca</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Gesso</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Gesso</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>bresso®</a>
@@ -2046,15 +2051,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/GESSO/[SANCA] [002].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Sanca</a></h4>
+                      <h4 class="card-title"><a href="#">Sanca</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Gesso</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Gesso</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>bresso®</a>
@@ -2077,15 +2082,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[Fio Flexível 2.5mm CNC].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Fio Flexível</a></h4>
+                      <h4 class="card-title"><a href="#">Fio Flexível</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Controller®</a>
@@ -2105,15 +2110,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[Luminária Led 25w sobrepor 30cm Quadrado Frio Bivolt].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Luminária Led 25w</a></h4>
+                      <h4 class="card-title"><a href="#">Luminária Led 25w</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Radial®</a>
@@ -2133,15 +2138,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[Pezzi Plugue Macho 2P 10A CZ].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Plugue macho</a></h4>
+                      <h4 class="card-title"><a href="#">Plugue macho</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>PREDIAL®</a>
@@ -2161,15 +2166,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[FILTRO DE LINHA 5 TOMADAS 2P+T 127220V PVC QFL5 QUALITRONIX].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Régua Extensão 5</a></h4>
+                      <h4 class="card-title"><a href="#">Régua Extensão 5</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Qualittronix®</a>
@@ -2189,15 +2194,15 @@
                   <div class="card">
                     <div class="thumb-content">
                       <!-- <div class="price">$200</div> -->
-                      <a href="single.html">
+                      <a href="#">
                         <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[Régua Extensão Elétrica 3 Pinos 3 Tomadas 30 Metros Inmetro].jpg" alt="Card image cap">
                       </a>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title"><a href="single.html">Régua Extensão 3</a></h4>
+                      <h4 class="card-title"><a href="#">Régua Extensão 3</a></h4>
                       <ul class="list-inline product-meta">
                         <li class="list-inline-item">
-                          <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                          <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                         </li>
                         <li class="list-inline-item">
                           <a href="category.html"><i class="fa fa-calendar"></i>Qualittronix®</a>
@@ -2218,15 +2223,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[Spot De Embutir Led Redondo 5w 6500k].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Led 5W</a></h4>
+                    <h4 class="card-title"><a href="#">Led 5W</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Vonder®</a>
@@ -2246,15 +2251,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[Spot Led Cob 9w E27 Em Barroco  Claro De Downlight L Mpada Bulbo Ac85-265V].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Led 9W</a></h4>
+                    <h4 class="card-title"><a href="#">Led 9W</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Radial®</a>
@@ -2274,15 +2279,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/ELETRICA/[Plafon Luminaria Com Soquete Porcelana E27].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Soquete Porcelana</a></h4>
+                    <h4 class="card-title"><a href="#">Soquete Porcelana</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Elétrica</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Elétrica</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Radial®</a>
@@ -2302,15 +2307,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[DESEMPENADEIRA AÇO].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Desempenadeira</a></h4>
+                    <h4 class="card-title"><a href="#">Desempenadeira</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramentas</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Ferramentas</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Galo®</a>
@@ -2330,15 +2335,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/Imagens/UTENCILIOS/[NIVEL TORPEDO 8 MAGNETICO STANLEY].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Nivel de bolha torpedo</a></h4>
+                    <h4 class="card-title"><a href="#">Nivel de bolha torpedo</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Stanley®</a>
@@ -2357,15 +2362,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[ATLAS BROXA RENTAGULAR].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Broxa Rentagular</a></h4>
+                    <h4 class="card-title"><a href="#">Broxa Rentagular</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Tigre®</a>
@@ -2384,15 +2389,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[FERRAMENTAS] [ESCADA DOBRAVEL].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Escada Dobravel</a></h4>
+                    <h4 class="card-title"><a href="#">Escada Dobravel</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Vonder®</a>
@@ -2411,15 +2416,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[FERRAMENTAS][ESTILETE].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Estilete</a></h4>
+                    <h4 class="card-title"><a href="#">Estilete</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Vonder®</a>
@@ -2444,15 +2449,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/PINTURA/[BANDEJA PINTURA].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Bandeja Pintura</a></h4>
+                    <h4 class="card-title"><a href="#">Bandeja Pintura</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Pintura</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Pintura</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Suvinil®</a>
@@ -2471,15 +2476,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/Imagens/FERRAMENTAS/[EPI] [OCULOS DE PROTEÇÃO].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Oculos de Proteção</a></h4>
+                    <h4 class="card-title"><a href="#">Oculos de Proteção</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>EPI</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>EPI</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Cast®</a>
@@ -2498,15 +2503,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FITAS/[FITA ZEBRADA 7CM X 100M ].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Fita Zebrada</a></h4>
+                    <h4 class="card-title"><a href="#">Fita Zebrada</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Fita</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Fita</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Ancora®</a>
@@ -2525,15 +2530,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FITAS/[FITA ISOLANTE 10M].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Fita Isolante</a></h4>
+                    <h4 class="card-title"><a href="#">Fita Isolante</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Fita</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Fita</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Worker®</a>
@@ -2552,15 +2557,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FITAS/[FITA PARA CIMENTICIA].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Fita Cimenticia</a></h4>
+                    <h4 class="card-title"><a href="#">Fita Cimenticia</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Fita</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Fita</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Ancora®</a>
@@ -2579,15 +2584,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FITAS/[FITA DUPLA FACE VHB 4910 12MMX5M].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Fita Dupla Face</a></h4>
+                    <h4 class="card-title"><a href="#">Fita Dupla Face</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Fita</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Fita</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>3Mfita®</a>
@@ -2606,15 +2611,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FITAS/[FITA SILVER TAPE].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Fita Silver Tape</a></h4>
+                    <h4 class="card-title"><a href="#">Fita Silver Tape</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Fita</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Fita</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Tectape®</a>
@@ -2633,15 +2638,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/PARAFUSOS/[PARAFUSO][CHUMBADOR].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Parafuso Chumbador</a></h4>
+                    <h4 class="card-title"><a href="#">Parafuso Chumbador</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Parafuso</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Parafuso</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Ancora®</a>
@@ -2660,15 +2665,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/PARAFUSOS/[REBITE].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Rebite</a></h4>
+                    <h4 class="card-title"><a href="#">Rebite</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Parafuso</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Parafuso</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Ancora®</a>
@@ -2687,15 +2692,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/PINTURA/[TINTA GESSO DRYWALL][SUVINIL].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Tinta Gesso Drywall</a></h4>
+                    <h4 class="card-title"><a href="#">Tinta Gesso Drywall</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Pintura</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Pintura</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Suvinil®</a>
@@ -2714,15 +2719,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[TRENA 8M].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Trena</a></h4>
+                    <h4 class="card-title"><a href="#">Trena</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Lufkin®</a>
@@ -2741,15 +2746,15 @@
                 <div class="card">
                   <div class="thumb-content">
                     <!-- <div class="price">$200</div> -->
-                    <a href="single.html">
+                    <a href="#">
                       <img class="card-img-top img-fluid" src="/imagens/FERRAMENTAS/[FERRAMENTA][SERRA DRYWALL].jpg" alt="Card image cap">
                     </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title"><a href="single.html">Serra Drywall</a></h4>
+                    <h4 class="card-title"><a href="#">Serra Drywall</a></h4>
                     <ul class="list-inline product-meta">
                       <li class="list-inline-item">
-                        <a href="single.html"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
+                        <a href="#"><i class="fa fa-folder-open-o"></i>Ferramenta</a>
                       </li>
                       <li class="list-inline-item">
                         <a href="category.html"><i class="fa fa-calendar"></i>Plaster®</a>
@@ -2789,7 +2794,9 @@
               </ul>
             </nav>
           </div>
+          </main>
         </div>
+      
       </div>
     </div>
 

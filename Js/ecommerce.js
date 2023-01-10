@@ -1,3 +1,5 @@
+
+
 // LOADING INICIAR
 $(document).ready(function() {
   $('.loading-screen').fadeIn(4000);
@@ -9,7 +11,6 @@ $(window).on('load', function() {
 //LOADING INICIAR
 
 // SELECIONAR INTEM COM BUTTON
-// init Isotope
 var $grid = $('.collection-list').isotope({
   // options
 });
@@ -50,7 +51,6 @@ $('.plus-minus .minus').click(function(){
 });
 // MODAL
 
-
 // MODAL
 var modalConfirm = function(callback){
   
@@ -80,21 +80,7 @@ modalConfirm(function(confirm){
   }
 });
 
-// jQuery Smooth Scroll
-$(".navbar a").on("click", function (e) {
-  if (this.hash !== "") {
-    e.preventDefault();
 
-    const hash = this.hash;
-    $("html, body").animate(
-      {
-        scrollTop: $(hash).offset().top
-      },
-      800
-    );
-  }
-});
-// jQuery Smooth Scroll
 
 // WHATS SAPP
 $('document').ready(function(){
@@ -273,3 +259,31 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $("input[type='checkbox']").on("change", function() {
+    var isChecked = $(this).is(':checked');
+    var value = $(this).val().toLowerCase();
+    $(".product-item").filter(function() {
+      $(this).toggle(isChecked ? $(this).find('.card-title a').text().toLowerCase().indexOf(value) > -1 || $(this).find('img').attr('src').toLowerCase().indexOf(value) > -1 || $(this).find('ul.product-meta a').text().toLowerCase().indexOf(value) > -1 || $(this).find('.card-text').text().toLowerCase().indexOf(value) > -1 : true)
+    });
+  });
+});
+
+
+// BUSCAR //
+function searchBar() {
+  $('#searchText').on('keyup', function() {
+  let searchString = $(this).val();
+  $("main div ").each(function(index, value) {
+        
+    currentName = $(value).text()
+    if( currentName.toUpperCase().indexOf(searchString.toUpperCase()) > -1) {
+      $(value).show();
+    } else {
+      $(value).hide();
+    }
+  });
+});
+};
+searchBar();
+// BUSCAR //
