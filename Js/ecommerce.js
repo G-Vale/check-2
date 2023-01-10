@@ -1,7 +1,12 @@
-$('html, body').animate({
-  scrollTop: $(".acessorio02").offset().top
-}, 2000);
+// LOADING INICIAR
+$(document).ready(function() {
+  $('.loading-screen').fadeIn(4000);
+});
 
+$(window).on('load', function() {
+  $('.loading-screen').fadeOut(1000);
+});
+//LOADING INICIAR
 
 // SELECIONAR INTEM COM BUTTON
 // init Isotope

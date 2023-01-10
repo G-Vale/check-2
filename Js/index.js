@@ -1,24 +1,13 @@
-// SLL ATULIZADOR 
-
-//document.body.innerHTML = '<div id="loading" class="mt-n1 mx-auto m-20 loading "></div>';
-//window.onload = function() {
-  //setTimeout(function() {
-    //window.location = 'https://www.gessodrywallgds.com.br/';
-    //document.getElementById('loading').classList.remove('loading');
- // }, 2000);
-//};
-window.onload = function(){
-  setTimeout(function(){
-      window.location.href="https://www.gessodrywallgds.com.br";
-  }, 1500);
-};
+// LOADING INICIAR
 $(document).ready(function() {
-  $('.loading-screen').fadeIn(1000);
+  $('.loading-screen').fadeIn(4000);
 });
 
 $(window).on('load', function() {
-  $('.loading-screen').fadeOut(40000);
+  $('.loading-screen').fadeOut(1000);
 });
+//LOADING INICIAR
+
 
 // jQuery Smooth Scroll
 $(".navbar a").on("click", function (e) {
