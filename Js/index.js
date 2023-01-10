@@ -7,7 +7,13 @@
     //document.getElementById('loading').classList.remove('loading');
  // }, 2000);
 //};
+$(document).ready(function() {
+  $('.loading-screen').fadeIn(1000);
+});
 
+$(window).on('load', function() {
+  $('.loading-screen').fadeOut(40000);
+});
 // jQuery Smooth Scroll
 $(".navbar a").on("click", function (e) {
   if (this.hash !== "") {

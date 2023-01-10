@@ -1,3 +1,8 @@
+$('html, body').animate({
+  scrollTop: $(".acessorio02").offset().top
+}, 2000);
+
+
 // SELECIONAR INTEM COM BUTTON
 // init Isotope
 var $grid = $('.collection-list').isotope({
