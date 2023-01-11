@@ -265,9 +265,11 @@ $(document).ready(function(){
     var value = $(this).val().toLowerCase();
     $(".product-item").filter(function() {
       $(this).toggle(isChecked ? $(this).find('.card-title a').text().toLowerCase().indexOf(value) > -1 || $(this).find('img').attr('src').toLowerCase().indexOf(value) > -1 || $(this).find('ul.product-meta a').text().toLowerCase().indexOf(value) > -1 || $(this).find('.card-text').text().toLowerCase().indexOf(value) > -1 : true)
+      
     });
   });
 });
+
 
 
 // BUSCAR //
