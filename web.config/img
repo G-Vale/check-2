@@ -1,7 +1,0 @@
-<configuration>
-   <system.webServer>
-      <staticContent>
-         <mimeMap fileExtension=".xxx" mimeType="text/plain"/>
-      </staticContent>
-   </system.webServer>
-</configuration>
