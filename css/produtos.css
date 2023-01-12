@@ -14,7 +14,17 @@ div {
 body {
   font-family: var(--sm-font);
 }
-
+img { 
+  max-width: 100%; 
+  height: auto; 
+  width: 150px; 
+  width: 100%; 
+}
+@media (max-width: 620px) {
+  img {
+      width: auto;
+  }
+}
 /* LOADING INICIAR*/
 .loading-screen {
   position: absolute;
