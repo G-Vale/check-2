@@ -7,15 +7,22 @@ div {
     border: 2px solid rgb(153, 0, 0);
 }
 */
-
-img { 
-  max-width: 100%; 
-  height: auto; 
-  width: 100%; 
+img {
+  width: 100%;
 }
-@media (max-width: 620px) {
+@media only screen and (max-width: 480px) {
   img {
-      width: auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  img {
+    width: 100%;
   }
 }
 /* LOADING INICIAR*/
