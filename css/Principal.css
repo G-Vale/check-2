@@ -8,22 +8,8 @@ div {
 }
 */
 img {
-  width: 100%;
-}
-@media only screen and (max-width: 480px) {
-  img {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-  img {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  img {
-    width: 100%;
-  }
+  max-width: 100%;
+  height: auto;
 }
 /* LOADING INICIAR*/
 .loading-screen {
@@ -1059,11 +1045,11 @@ i:hover {
 
 @media(max-width: 820px) {
   .top {
-    padding-top: 10.5rem;
+    padding-top: 0.5rem;
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("/Imagens/ANUNCIOS/[capa][002].jpeg");
+    background-image: url("/Imagens/ANUNCIOS/[capa][002].webp");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
